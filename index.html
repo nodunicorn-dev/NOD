@@ -1068,7 +1068,9 @@ detectLang();
 const supabaseUrl = "https://ugyyqmwzwrifmrwxzyhj.supabase.co";
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVneXlxbXd6d3JpZm1yd3h6eWhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ2MjA0NjYsImV4cCI6MjA5MDE5NjQ2Nn0.y6ResrrcMf8I3kSDkck7JCRKGdPxgbDc4KvGuDT0BcA";
 const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
-  async function saveResult(value){
+async function saveResult(value){
+  console.log("TRY SAVE:", value);
+
   const { data, error } = await supabaseClient
     .from('Results')
     .insert([{ value: value }]);
