@@ -1060,5 +1060,11 @@ function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t
 // ── INIT ──
 detectLang();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const supabaseUrl = "https://ugyyqmwzwrifmrwxzyhj.supabase.co";
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVneXlxbXd6d3JpZm1yd3h6eWhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ2MjA0NjYsImV4cCI6MjA5MDE5NjQ2Nn0.y6ResrrcMf8I3kSDkck7JCRKGdPxgbDc4KvGuDT0BcA";
+const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+</script>
 </body>
 </html>
