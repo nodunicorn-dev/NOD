@@ -1025,7 +1025,7 @@ const ST_TABS=['ov','spd','vpn','dev','vcard','ref'];
 function ST(t){
   ST_TABS.forEach(x=>{const el=document.getElementById('st-'+x);if(el)el.style.display=x===t?'block':'none'});
   document.querySelectorAll('#s-sub .ni, #s-sub .mni').forEach((el,i)=>el.classList.toggle('on',ST_TABS[i]===t));
-saveResult(id);
+saveResult(t);
 }
 
 // ── OWNER TABS ──
@@ -1033,7 +1033,7 @@ const OT_TABS=['ov','tl','subs','earn','hlth'];
 function OT(t){
   OT_TABS.forEach(x=>{const el=document.getElementById('ot-'+x);if(el)el.style.display=x===t?'block':'none'});
   document.querySelectorAll('#s-own .ni, #s-own .mni').forEach((el,i)=>el.classList.toggle('on',OT_TABS[i]===t));
-saveResult(id);
+saveResult(t);
 }
 
 // ── CHARTS ──
