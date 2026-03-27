@@ -22,21 +22,15 @@
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth}
 body{font-family:var(--font);background:var(--bg);color:var(--white);min-height:100vh;overflow-x:hidden;font-size:15px;line-height:1.6}
-
-/* SCREENS */
 .screen{display:none;min-height:100vh;animation:fadeIn .3s ease}
 .screen.active{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-
-/* NAV */
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:rgba(8,8,8,0.92);backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,0.05)}
 .logo{font-family:var(--display);font-size:24px;font-weight:700;letter-spacing:-1px;cursor:pointer;display:flex;align-items:center;gap:3px}
 .logo-dot{color:var(--accent);font-size:28px;line-height:1}
 .nav-r{display:flex;gap:8px;align-items:center}
 .lang-switch{font-size:12px;color:var(--g500);background:none;border:1px solid rgba(255,255,255,0.08);border-radius:100px;padding:5px 12px;cursor:pointer;font-family:var(--font);transition:all .15s}
 .lang-switch:hover{color:var(--white);border-color:rgba(255,255,255,0.2)}
-
-/* BUTTONS */
 .btn{font-family:var(--font);font-size:13px;font-weight:500;padding:10px 20px;border-radius:100px;cursor:pointer;transition:all .18s ease;border:none;outline:none;display:inline-flex;align-items:center;gap:6px;letter-spacing:.01em}
 .btn-ghost{background:transparent;color:var(--g300);border:1px solid rgba(255,255,255,0.1)}
 .btn-ghost:hover{color:var(--white);border-color:rgba(255,255,255,0.25)}
@@ -48,8 +42,6 @@ body{font-family:var(--font);background:var(--bg);color:var(--white);min-height:
 .btn-full{width:100%;justify-content:center}
 .btn-outline{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,0.15)}
 .btn-outline:hover{background:rgba(255,255,255,0.05)}
-
-/* HERO */
 .hero{padding:160px 28px 60px;max-width:720px;margin:0 auto;text-align:center}
 .live-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,232,122,0.08);border:1px solid rgba(0,232,122,0.18);color:var(--accent);font-size:11px;font-weight:500;padding:6px 16px;border-radius:100px;margin-bottom:32px;letter-spacing:.08em;text-transform:uppercase;font-family:var(--display)}
 .live-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite;flex-shrink:0}
@@ -59,8 +51,6 @@ h1 em{font-style:italic;color:var(--accent);font-weight:400}
 .hero-sub{font-size:17px;color:var(--g500);max-width:500px;margin:0 auto 36px;font-weight:300;line-height:1.75}
 .hero-cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:10px}
 .hero-note{font-size:12px;color:var(--g700);margin-bottom:64px;letter-spacing:.01em}
-
-/* SPEED PROOF */
 .speed-box{background:var(--bg2);border-radius:var(--r);padding:24px;max-width:480px;margin:0 auto 70px;border:1px solid rgba(255,255,255,0.05)}
 .sp-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
 .sp-title{font-size:11px;color:var(--g700);text-transform:uppercase;letter-spacing:.08em}
@@ -71,13 +61,9 @@ h1 em{font-style:italic;color:var(--accent);font-weight:400}
 .sp-track{flex:1;background:rgba(255,255,255,0.04);border-radius:4px;height:7px;overflow:hidden}
 .sp-fill{height:100%;border-radius:4px}
 .sp-val{font-family:var(--mono);font-size:11px;width:68px;text-align:right;flex-shrink:0}
-
-/* SECTION */
 .section{padding:72px 28px;max-width:1000px;margin:0 auto}
 .sec-eyebrow{font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.12em;margin-bottom:14px;font-family:var(--display);font-weight:600}
 h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;letter-spacing:-1.5px;margin-bottom:44px;line-height:1.1}
-
-/* HOW IT WORKS — OWNER */
 .owner-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:3px}
 .os-card{background:var(--bg2);padding:28px;border:1px solid rgba(255,255,255,0.04);position:relative;overflow:hidden}
 .os-card:first-child{border-radius:var(--r) 0 0 var(--r)}
@@ -88,8 +74,6 @@ h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;let
 .os-card h3{font-family:var(--display);font-size:17px;font-weight:600;margin-bottom:6px;letter-spacing:-.3px}
 .os-card p{font-size:12px;color:var(--g500);line-height:1.7}
 .os-tag{display:inline-block;margin-top:10px;font-size:10px;padding:3px 10px;border-radius:100px;background:var(--ad);color:var(--accent);border:1px solid rgba(0,232,122,0.12)}
-
-/* WHAT YOU NEED BOX */
 .need-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
 .need-card{background:var(--bg2);border-radius:var(--r);padding:20px;border:1px solid rgba(255,255,255,0.05)}
 .need-card.highlight{border-color:rgba(0,232,122,0.2);background:rgba(0,232,122,0.03)}
@@ -98,14 +82,11 @@ h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;let
 .need-item{font-size:12px;color:var(--g500);display:flex;gap:7px}
 .need-item::before{content:'—';color:var(--g700);flex-shrink:0}
 .need-item.yes::before{content:'+';color:var(--accent)}
-
-/* TIERS */
 .tiers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
-.tier{background:var(--bg2);border-radius:var(--r);padding:26px;border:1px solid rgba(255,255,255,0.05);display:flex;flex-direction:column;transition:transform .2s}
+.tier{background:var(--bg2);border-radius:var(--r);padding:26px;border:1px solid rgba(255,255,255,0.05);display:flex;flex-direction:column;transition:transform .2s;position:relative}
 .tier:hover{transform:translateY(-3px)}
 .tier.hot{border-color:var(--accent)}
 .tier-pop{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--accent);color:var(--bg);font-size:10px;font-weight:600;padding:3px 14px;border-radius:100px;white-space:nowrap;font-family:var(--display);letter-spacing:.04em}
-.tier{position:relative}
 .tier-name{font-size:11px;color:var(--g500);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;font-family:var(--display)}
 .tier-price{font-family:var(--display);font-size:32px;font-weight:700;letter-spacing:-1.5px;margin-bottom:3px;line-height:1}
 .tier-price span{font-size:13px;color:var(--g500);font-weight:400;letter-spacing:0}
@@ -115,14 +96,10 @@ h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;let
 .tier-feats li{font-size:12px;color:var(--g500);display:flex;gap:7px;line-height:1.5}
 .tier-feats li::before{content:'—';color:var(--g700);flex-shrink:0}
 .tier-feats li.yes::before{content:'+';color:var(--accent)}
-
-/* TRIAL BANNER */
 .trial-wrap{margin:0 28px 70px;border-radius:var(--r);background:var(--white);color:var(--bg);padding:44px 36px;text-align:center;position:relative;overflow:hidden}
 .trial-wrap::after{content:'14';position:absolute;font-family:var(--display);font-size:220px;font-weight:700;opacity:.04;right:-20px;top:-50px;line-height:1;pointer-events:none;letter-spacing:-10px}
 .trial-wrap h3{font-family:var(--display);font-size:30px;font-weight:700;letter-spacing:-1px;margin-bottom:8px}
 .trial-wrap p{font-size:15px;color:#555;margin-bottom:24px;max-width:400px;margin-left:auto;margin-right:auto}
-
-/* MODALS */
 .ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);backdrop-filter:blur(12px);z-index:200;align-items:center;justify-content:center;padding:20px}
 .ov.open{display:flex}
 .modal{background:var(--bg2);border-radius:var(--r);padding:32px;width:100%;max-width:420px;border:1px solid rgba(255,255,255,0.07);animation:up .22s ease;position:relative;max-height:90vh;overflow-y:auto}
@@ -131,19 +108,13 @@ h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;let
 .modal-x:hover{color:var(--white)}
 .m-title{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.5px;margin-bottom:5px}
 .m-sub{font-size:13px;color:var(--g500);margin-bottom:22px;line-height:1.6}
-
-/* STEP PROGRESS */
 .steps-bar{display:flex;gap:6px;margin-bottom:22px}
 .step-pip{flex:1;height:3px;border-radius:2px;background:rgba(255,255,255,0.07);transition:background .3s}
 .step-pip.on{background:var(--accent)}
 .step-pip.done{background:rgba(0,232,122,0.4)}
-
-/* OTP INPUT */
 .otp-row{display:flex;gap:8px;justify-content:center;margin:18px 0}
 .otp-d{width:54px;height:58px;border-radius:var(--rs);background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:var(--white);font-size:24px;font-weight:500;text-align:center;font-family:var(--mono);outline:none;transition:border-color .15s}
 .otp-d:focus{border-color:var(--accent)}
-
-/* FORM */
 .fg{margin-bottom:14px}
 .fl{font-size:12px;color:var(--g500);margin-bottom:5px;display:block;letter-spacing:.02em}
 .fi{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:var(--rs);padding:12px 14px;color:var(--white);font-family:var(--font);font-size:14px;outline:none;transition:border-color .15s}
@@ -154,13 +125,9 @@ h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;let
 .pill-note{background:var(--ad);border:1px solid rgba(0,232,122,0.12);border-radius:var(--rs);padding:9px 12px;font-size:12px;color:var(--accent);margin-bottom:16px;display:flex;align-items:center;gap:8px;line-height:1.5}
 .form-foot{font-size:12px;color:var(--g700);text-align:center;margin-top:14px;line-height:1.6}
 .form-foot a{color:var(--accent);cursor:pointer;text-decoration:none}
-
-/* PAY TABS */
 .ptabs{display:flex;gap:4px;background:rgba(255,255,255,0.04);border-radius:var(--rs);padding:3px;margin-bottom:14px}
 .ptab{flex:1;text-align:center;padding:7px 4px;border-radius:7px;font-size:11px;color:var(--g500);cursor:pointer;transition:all .15s;border:none;background:none;font-family:var(--font)}
 .ptab.on{background:var(--bg3);color:var(--white)}
-
-/* VIRTUAL CARD */
 .vcard{background:linear-gradient(135deg,#1a1a1a 0%,#2a2a2a 100%);border-radius:14px;padding:22px;border:1px solid rgba(255,255,255,0.08);margin-bottom:14px;position:relative;overflow:hidden}
 .vcard::before{content:'NOD';position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:var(--display);font-size:48px;font-weight:700;opacity:.04;letter-spacing:-2px}
 .vc-label{font-size:10px;color:var(--g700);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
@@ -169,8 +136,6 @@ h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;let
 .vc-field{display:flex;flex-direction:column;gap:3px}
 .vc-val{font-family:var(--mono);font-size:13px}
 .vc-badge{position:absolute;top:16px;right:16px;background:var(--accent);color:var(--bg);font-size:10px;padding:3px 10px;border-radius:100px;font-weight:600;font-family:var(--display)}
-
-/* DASHBOARD */
 .dash{display:flex;min-height:100vh}
 .sb{width:220px;flex-shrink:0;background:var(--bg2);border-right:1px solid rgba(255,255,255,0.05);padding:78px 0 24px;display:flex;flex-direction:column}
 .sb-logo{padding:0 20px 28px;font-family:var(--display);font-size:22px;font-weight:700;cursor:pointer;letter-spacing:-.5px}
@@ -188,13 +153,10 @@ h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;let
 .u-n{font-size:12px;font-weight:500}
 .u-t{font-size:11px;color:var(--accent)}
 .u-to{font-size:11px;color:var(--g500)}
-
 .dmain{flex:1;padding:80px 28px 40px;overflow-y:auto}
 .dhead{margin-bottom:26px}
 .dhead h2{font-family:var(--display);font-size:24px;font-weight:700;letter-spacing:-.5px;margin-bottom:4px}
 .dhead p{font-size:13px;color:var(--g500)}
-
-/* STATS */
 .sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:18px}
 .sc{background:var(--bg2);border-radius:var(--r);padding:16px;border:1px solid rgba(255,255,255,0.05)}
 .sl{font-size:10px;color:var(--g700);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;font-family:var(--display)}
@@ -202,13 +164,8 @@ h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;let
 .sv.ac{color:var(--accent)}
 .ss{font-size:11px;color:var(--g700)}
 .ss.up{color:var(--accent)}
-
-/* CARDS */
 .card{background:var(--bg2);border-radius:var(--r);border:1px solid rgba(255,255,255,0.05);padding:20px;margin-bottom:14px}
 .ctitle{font-family:var(--display);font-size:14px;font-weight:600;margin-bottom:14px;letter-spacing:-.2px}
-.ctitle small{font-family:var(--font);font-size:11px;color:var(--g700);font-weight:400;margin-left:6px}
-
-/* VPN STATUS */
 .vpns{border-radius:var(--rs);padding:13px 15px;display:flex;align-items:center;gap:11px;margin-bottom:10px}
 .vpns.live{background:rgba(0,232,122,0.05);border:1px solid rgba(0,232,122,0.1)}
 .vpns.idle{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05)}
@@ -219,19 +176,13 @@ h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;let
 .vn{font-size:13px;font-weight:500;margin-bottom:1px}
 .vd{font-size:11px;color:var(--g500)}
 .vping{font-family:var(--mono);font-size:11px;color:var(--accent)}
-
-/* USAGE */
 .ubw{background:rgba(255,255,255,0.05);border-radius:4px;height:7px;margin-bottom:5px;overflow:hidden}
 .ub{height:100%;border-radius:4px;background:var(--accent)}
 .um{display:flex;justify-content:space-between;font-size:11px;color:var(--g700)}
-
-/* CHART */
 .bwc{height:68px;display:flex;align-items:flex-end;gap:3px}
 .bwb{flex:1;border-radius:3px 3px 0 0;cursor:pointer;transition:opacity .15s}
 .bwb:hover{opacity:.65}
 .bwl{display:flex;justify-content:space-between;margin-top:5px;font-size:10px;color:var(--g700);font-family:var(--mono)}
-
-/* TABLE */
 .tbl{width:100%;border-collapse:collapse}
 .tbl th{font-size:10px;color:var(--g700);text-align:left;padding:7px 10px;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid rgba(255,255,255,0.05);font-family:var(--display)}
 .tbl td{font-size:12px;padding:11px 10px;border-bottom:1px solid rgba(255,255,255,0.03);color:var(--g500)}
@@ -244,16 +195,12 @@ h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;let
 .dot{display:inline-flex;align-items:center;gap:5px}
 .dot::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--accent);display:inline-block}
 .dot.off::before{background:var(--g700)}
-
-/* EARNINGS */
 .er{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
 .er:last-child{border-bottom:none}
 .el{font-size:13px;color:var(--g500)}
 .ev{font-family:var(--mono);font-size:13px}
 .ev.g{color:var(--accent)}
 .ev.r{color:var(--red)}
-
-/* TIMELINE */
 .tl{display:flex;flex-direction:column}
 .tli{display:flex;gap:16px;padding-bottom:22px;position:relative}
 .tli:last-child{padding-bottom:0}
@@ -268,8 +215,6 @@ h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;let
 .tlt{font-family:var(--display);font-size:14px;font-weight:600;margin:0 0 3px}
 .tld2{font-size:12px;color:var(--g500);line-height:1.6;margin:0}
 .tl-day{font-size:10px;color:var(--g700);text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;font-family:var(--mono)}
-
-/* DEVICE DISPLAY */
 .dev-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
 .dev-row:last-child{border-bottom:none}
 .dev-icon{font-size:18px;width:28px;text-align:center}
@@ -278,25 +223,12 @@ h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;let
 .dev-detail{font-size:11px;color:var(--g500)}
 .dev-status{font-size:11px;color:var(--accent)}
 .dev-status.off{color:var(--g700)}
-
-/* MAP */
-.mapbox{background:var(--bg);border-radius:var(--rs);height:200px;border:1px solid rgba(255,255,255,0.05);position:relative;overflow:hidden}
-.mgrid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,232,122,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(0,232,122,0.02) 1px,transparent 1px);background-size:26px 26px}
-.mnode{position:absolute}
-.mcore{width:10px;height:10px;border-radius:50%;position:relative;z-index:2}
-.mring{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%;opacity:0;animation:exp 2.5s infinite}
-@keyframes exp{0%{width:10px;height:10px;opacity:.5}100%{width:52px;height:52px;opacity:0}}
-.mtag{position:absolute;left:13px;top:-5px;background:rgba(0,0,0,0.8);border:1px solid rgba(255,255,255,0.08);border-radius:100px;font-size:10px;padding:2px 8px;white-space:nowrap;z-index:3;font-family:var(--mono)}
-
-/* SHARE CARD */
 .sharecard{background:var(--bg);border:1px solid rgba(0,232,122,0.15);border-radius:var(--r);padding:22px;text-align:center;position:relative;overflow:hidden;margin-top:18px}
 .sharecard::before{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:200px;height:100px;background:radial-gradient(circle,rgba(0,232,122,0.08),transparent 70%);pointer-events:none}
 .sc-speed{font-family:var(--display);font-size:56px;font-weight:700;color:var(--accent);line-height:1;letter-spacing:-3px}
 .sc-unit{font-size:13px;color:var(--g700);margin-bottom:6px}
 .sc-vs{font-size:13px;color:var(--g500)}
 .sc-tag{font-size:11px;color:var(--g700);margin-top:10px}
-
-/* NOTIF */
 .notif{display:flex;gap:10px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,0.04);align-items:flex-start}
 .notif:last-child{border-bottom:none}
 .nic{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
@@ -306,45 +238,34 @@ h2{font-family:var(--display);font-size:clamp(28px,5vw,48px);font-weight:700;let
 .ntxt{font-size:12px;color:var(--g500);line-height:1.55}
 .ntxt strong{color:var(--white);font-weight:500}
 .ntime{font-size:10px;color:var(--g700);margin-top:2px;font-family:var(--mono)}
-
-/* QSCORE */
 .qs{display:flex;align-items:center;gap:10px;margin-bottom:10px}
 .qt{font-size:12px;color:var(--g500);width:120px;flex-shrink:0}
 .qbw{flex:1;background:rgba(255,255,255,0.05);border-radius:3px;height:5px;overflow:hidden}
 .qb{height:100%;border-radius:3px;background:var(--accent)}
 .qv{font-family:var(--mono);font-size:11px;color:var(--accent);width:30px;text-align:right;flex-shrink:0}
-
-/* MOBILE NAV */
-.mobnav{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--bg2);border-top:1px solid rgba(255,255,255,0.05);z-index:100;padding:5px 0 env(safe-area-inset-bottom)}
+.setup-alert{background:rgba(255,170,0,0.05);border:1px solid rgba(255,170,0,0.15);border-radius:var(--r);padding:16px 18px;margin-bottom:14px;display:flex;gap:12px;align-items:flex-start}
+.sa-icon{font-size:20px;flex-shrink:0;margin-top:1px}
+.sa-title{font-family:var(--display);font-size:14px;font-weight:600;color:var(--amber);margin-bottom:3px}
+.sa-desc{font-size:12px;color:var(--g500);line-height:1.6}
+.mobnav{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--bg2);border-top:1px solid rgba(255,255,255,0.05);z-index:100;padding:5px 0}
 .mnw{display:flex}
 .mni{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:5px;color:var(--g700);font-size:10px;cursor:pointer;background:none;border:none;font-family:var(--font)}
 .mni.on{color:var(--accent)}
 .mnic{font-size:20px}
 @media(max-width:640px){.sb{display:none}.mobnav{display:block}.mnw{display:flex}.dmain{padding:76px 14px 88px}}
-
-/* SETUP ALERT */
-.setup-alert{background:rgba(255,170,0,0.05);border:1px solid rgba(255,170,0,0.15);border-radius:var(--r);padding:16px 18px;margin-bottom:14px;display:flex;gap:12px;align-items:flex-start}
-.sa-icon{font-size:20px;flex-shrink:0;margin-top:1px}
-.sa-title{font-family:var(--display);font-size:14px;font-weight:600;color:var(--amber);margin-bottom:3px}
-.sa-desc{font-size:12px;color:var(--g500);line-height:1.6}
-
-/* TOAST */
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(70px);background:var(--white);color:var(--bg);padding:11px 22px;border-radius:100px;font-size:13px;font-weight:500;z-index:999;transition:transform .3s ease;white-space:nowrap;pointer-events:none;font-family:var(--display)}
 .toast.show{transform:translateX(-50%) translateY(0)}
-
-/* FOOTER */
 footer{padding:40px 28px;border-top:1px solid rgba(255,255,255,0.05);text-align:center}
 footer p{font-size:12px;color:var(--g700)}
-
-/* LANG STRINGS */
 [data-lang="fr"]{display:none}
+.spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(0,0,0,0.2);border-top-color:var(--bg);border-radius:50%;animation:spin .6s linear infinite;vertical-align:middle;margin-right:6px}
+@keyframes spin{to{transform:rotate(360deg)}}
 </style>
 </head>
 <body>
-
 <div class="toast" id="toast"></div>
 
-<!-- ══════ LANDING ══════ -->
+<!-- LANDING -->
 <div class="screen active" id="s-land">
 <nav class="nav">
   <div class="logo" onclick="go('s-land')">Nod<span class="logo-dot">.</span></div>
@@ -354,26 +275,20 @@ footer p{font-size:12px;color:var(--g700)}
     <button class="btn btn-accent" onclick="om('m-otp')"><span data-lang="en">Get 2 weeks free</span><span data-lang="fr">14 jours gratuits</span></button>
   </div>
 </nav>
-
 <div class="hero">
   <div class="live-badge"><span data-lang="en">Live now — Yaoundé &amp; Douala</span><span data-lang="fr">Disponible — Yaoundé &amp; Douala</span></div>
   <h1 data-lang="en">Internet that<br>actually <em>works.</em></h1>
   <h1 data-lang="fr">Internet qui<br><em>fonctionne</em> vraiment.</h1>
   <p class="hero-sub" data-lang="en">Community-powered Starlink &amp; fiber internet. Up to 30× faster than MTN. Try completely free for 14 days.</p>
-  <p class="hero-sub" data-lang="fr">Internet communautaire Starlink &amp; fibre. Jusqu'à 30× plus rapide que MTN. Essayez gratuitement pendant 14 jours.</p>
+  <p class="hero-sub" data-lang="fr">Internet communautaire Starlink &amp; fibre. Jusqu'à 30× plus rapide que MTN. Essayez gratuitement 14 jours.</p>
   <div class="hero-cta">
     <button class="btn btn-accent btn-lg" onclick="om('m-otp')"><span data-lang="en">Start free — no card, no email</span><span data-lang="fr">Démarrer — sans carte, sans email</span></button>
     <button class="btn btn-outline btn-lg" onclick="om('m-owner')"><span data-lang="en">Own a connection? Earn with it ↗</span><span data-lang="fr">Connexion rapide? Gagnez avec ↗</span></button>
   </div>
   <p class="hero-note" data-lang="en">Works with Starlink · Camtel fiber · Creolink · Orange fiber · Any fast connection</p>
   <p class="hero-note" data-lang="fr">Compatible Starlink · Fibre Camtel · Creolink · Fibre Orange · Toute connexion rapide</p>
-
   <div class="speed-box">
-    <div class="sp-head">
-      <span class="sp-title" data-lang="en">Live speeds</span>
-      <span class="sp-title" data-lang="fr">Vitesses en direct</span>
-      <span class="sp-location">Yaoundé, CM</span>
-    </div>
+    <div class="sp-head"><span class="sp-title" data-lang="en">Live speeds</span><span class="sp-title" data-lang="fr">Vitesses en direct</span><span class="sp-location">Yaoundé, CM</span></div>
     <div class="sp-row"><span class="sp-name">MTN 4G</span><div class="sp-track"><div class="sp-fill" style="width:5%;background:var(--g700)"></div></div><span class="sp-val" style="color:var(--g500)">1.2 Mbps</span></div>
     <div class="sp-row"><span class="sp-name">Orange</span><div class="sp-track"><div class="sp-fill" style="width:9%;background:var(--g700)"></div></div><span class="sp-val" style="color:var(--g500)">2.1 Mbps</span></div>
     <div class="sp-row"><span class="sp-name" style="color:var(--blue)">Camtel</span><div class="sp-track"><div class="sp-fill" style="width:38%;background:var(--blue)"></div></div><span class="sp-val" style="color:var(--blue)">8.4 Mbps</span></div>
@@ -381,235 +296,90 @@ footer p{font-size:12px;color:var(--g700)}
   </div>
 </div>
 
-<!-- HOW IT WORKS — OWNER FOCUS -->
 <div class="section" style="padding-top:0">
   <div class="sec-eyebrow" data-lang="en">For node owners</div>
-  <div class="sec-eyebrow" data-lang="fr">Pour les propriétaires de nœuds</div>
+  <div class="sec-eyebrow" data-lang="fr">Pour les propriétaires</div>
   <h2 data-lang="en">Plug in.<br>Get paid.</h2>
   <h2 data-lang="fr">Branchez.<br>Soyez payé.</h2>
   <div class="owner-steps">
-    <div class="os-card">
-      <div class="os-num">01</div>
-      <div class="os-icon">📱</div>
-      <h3 data-lang="en">Download &amp; register</h3>
-      <h3 data-lang="fr">Téléchargez &amp; inscrivez</h3>
-      <p data-lang="en">Phone number only. No email, no ID, no paperwork. Tell us your connection type and location. Done in 60 seconds.</p>
-      <p data-lang="fr">Numéro de téléphone uniquement. Aucun email, aucune pièce d'identité. Indiquez votre type de connexion et votre emplacement. Terminé en 60 secondes.</p>
-      <span class="os-tag" data-lang="en">Zero technical skill</span>
-      <span class="os-tag" data-lang="fr">Aucune compétence technique</span>
-    </div>
-    <div class="os-card">
-      <div class="os-num">02</div>
-      <div class="os-icon">📦</div>
-      <h3 data-lang="en">Receive your kit</h3>
-      <h3 data-lang="fr">Recevez votre kit</h3>
-      <p data-lang="en">We deliver your pre-configured Nod router. One cable into your Starlink or fiber router. One power plug. Green light = done.</p>
-      <p data-lang="fr">Nous livrons votre routeur Nod préconfiguré. Un câble dans votre routeur Starlink ou fibre. Une prise. Lumière verte = terminé.</p>
-      <span class="os-tag" data-lang="en">Like plugging in a TV decoder</span>
-      <span class="os-tag" data-lang="fr">Comme brancher un décodeur TV</span>
-    </div>
-    <div class="os-card">
-      <div class="os-num">03</div>
-      <div class="os-icon">⏱</div>
-      <h3 data-lang="en">2-week quality check</h3>
-      <h3 data-lang="fr">Vérification qualité 2 semaines</h3>
-      <p data-lang="en">Your node runs silently. We verify speed and uptime. You watch a progress bar. On day 14 you get an SMS: "You're live."</p>
-      <p data-lang="fr">Votre nœud fonctionne silencieusement. Nous vérifions la vitesse et la disponibilité. Le jour 14 vous recevez un SMS : "Vous êtes en ligne."</p>
-      <span class="os-tag" data-lang="en">Nothing to do</span>
-      <span class="os-tag" data-lang="fr">Rien à faire</span>
-    </div>
-    <div class="os-card">
-      <div class="os-num">04</div>
-      <div class="os-icon">💰</div>
-      <h3 data-lang="en">Earn every month</h3>
-      <h3 data-lang="fr">Gagnez chaque mois</h3>
-      <p data-lang="en">70% of every subscription from your node, paid to MoMo on the 1st. Your connection pays for itself and makes profit.</p>
-      <p data-lang="fr">70% de chaque abonnement de votre nœud, payé sur MoMo le 1er. Votre connexion se rembourse et génère des bénéfices.</p>
-      <span class="os-tag" data-lang="en">Automatic — no effort</span>
-      <span class="os-tag" data-lang="fr">Automatique — sans effort</span>
-    </div>
-  </div>
-
-  <!-- WHAT YOU NEED -->
-  <div style="margin-top:24px">
-    <div class="need-grid">
-      <div class="need-card highlight">
-        <div class="need-title" data-lang="en">What you need</div>
-        <div class="need-title" data-lang="fr">Ce dont vous avez besoin</div>
-        <div class="need-items">
-          <div class="need-item yes" data-lang="en">Starlink, Camtel fiber, or Creolink</div>
-          <div class="need-item yes" data-lang="fr">Starlink, fibre Camtel, ou Creolink</div>
-          <div class="need-item yes" data-lang="en">A smartphone to manage your dashboard</div>
-          <div class="need-item yes" data-lang="fr">Un smartphone pour gérer votre tableau de bord</div>
-          <div class="need-item yes" data-lang="en">MTN MoMo or Orange Money to receive payouts</div>
-          <div class="need-item yes" data-lang="fr">MTN MoMo ou Orange Money pour recevoir les paiements</div>
-          <div class="need-item yes" data-lang="en">Your Nod kit (we deliver it)</div>
-          <div class="need-item yes" data-lang="fr">Votre kit Nod (nous le livrons)</div>
-        </div>
-      </div>
-      <div class="need-card">
-        <div class="need-title" data-lang="en">What you don't need</div>
-        <div class="need-title" data-lang="fr">Ce dont vous n'avez pas besoin</div>
-        <div class="need-items">
-          <div class="need-item" data-lang="en">Technical knowledge</div>
-          <div class="need-item" data-lang="fr">Connaissances techniques</div>
-          <div class="need-item" data-lang="en">A computer or laptop</div>
-          <div class="need-item" data-lang="fr">Un ordinateur portable</div>
-          <div class="need-item" data-lang="en">Any configuration or setup work</div>
-          <div class="need-item" data-lang="fr">Toute configuration ou installation</div>
-          <div class="need-item" data-lang="en">To manage subscribers manually</div>
-          <div class="need-item" data-lang="fr">Gérer les abonnés manuellement</div>
-        </div>
-      </div>
-    </div>
+    <div class="os-card"><div class="os-num">01</div><div class="os-icon">📱</div><h3 data-lang="en">Register in 60 sec</h3><h3 data-lang="fr">Inscrivez en 60 sec</h3><p data-lang="en">Phone number only. No email, no ID. Tell us your connection type and location.</p><p data-lang="fr">Numéro de téléphone uniquement. Aucun email, aucune pièce d'identité.</p><span class="os-tag" data-lang="en">Zero technical skill</span><span class="os-tag" data-lang="fr">Aucune compétence technique</span></div>
+    <div class="os-card"><div class="os-num">02</div><div class="os-icon">📦</div><h3 data-lang="en">Receive your kit</h3><h3 data-lang="fr">Recevez votre kit</h3><p data-lang="en">Pre-configured router delivered. One cable. One power plug. Green light = done.</p><p data-lang="fr">Routeur préconfiguré livré. Un câble. Une prise. Lumière verte = terminé.</p><span class="os-tag" data-lang="en">Like plugging in a TV decoder</span><span class="os-tag" data-lang="fr">Comme brancher un décodeur TV</span></div>
+    <div class="os-card"><div class="os-num">03</div><div class="os-icon">⏱</div><h3 data-lang="en">2-week quality check</h3><h3 data-lang="fr">Vérification 2 semaines</h3><p data-lang="en">Node runs silently. We verify speed and uptime. Day 14 SMS: "You're live."</p><p data-lang="fr">Nœud fonctionne silencieusement. Jour 14 SMS: "Vous êtes en ligne."</p><span class="os-tag" data-lang="en">Nothing to do</span><span class="os-tag" data-lang="fr">Rien à faire</span></div>
+    <div class="os-card"><div class="os-num">04</div><div class="os-icon">💰</div><h3 data-lang="en">Earn every month</h3><h3 data-lang="fr">Gagnez chaque mois</h3><p data-lang="en">70% of every subscription paid to MoMo on the 1st. Your dish pays for itself.</p><p data-lang="fr">70% de chaque abonnement payé sur MoMo le 1er.</p><span class="os-tag" data-lang="en">Automatic — no effort</span><span class="os-tag" data-lang="fr">Automatique — sans effort</span></div>
   </div>
 </div>
 
-<!-- TIERS -->
 <div class="section" style="padding-top:0">
-  <div class="sec-eyebrow" data-lang="en">Plans</div>
-  <div class="sec-eyebrow" data-lang="fr">Forfaits</div>
-  <h2 data-lang="en">Pick your speed</h2>
-  <h2 data-lang="fr">Choisissez votre vitesse</h2>
+  <div class="sec-eyebrow" data-lang="en">Plans</div><div class="sec-eyebrow" data-lang="fr">Forfaits</div>
+  <h2 data-lang="en">Pick your speed</h2><h2 data-lang="fr">Choisissez votre vitesse</h2>
   <div class="tiers-grid">
     <div class="tier">
-      <div class="tier-name">Basic</div>
-      <div class="tier-price">2,500 <span>CFA/mo</span></div>
+      <div class="tier-name">Basic</div><div class="tier-price">2,500 <span>CFA/mo</span></div>
       <div class="tier-speed">↑ 5 Mbps guaranteed</div>
-      <div class="tier-devices" data-lang="en">2 devices · 1 active at a time</div>
-      <div class="tier-devices" data-lang="fr">2 appareils · 1 actif à la fois</div>
-      <ul class="tier-feats">
-        <li class="yes" data-lang="en">VPN tunnel anywhere in region</li>
-        <li class="yes" data-lang="fr">Tunnel VPN partout dans la région</li>
-        <li class="yes" data-lang="en">14-day free trial</li>
-        <li class="yes" data-lang="fr">14 jours d'essai gratuit</li>
-        <li data-lang="en">Standard queue priority</li>
-        <li data-lang="fr">Priorité file d'attente standard</li>
-        <li data-lang="en">Max 10 users per node</li>
-        <li data-lang="fr">Max 10 utilisateurs par nœud</li>
-      </ul>
-      <button class="btn btn-ghost btn-full" onclick="om('m-otp')" data-lang="en">Start free</button>
-      <button class="btn btn-ghost btn-full" onclick="om('m-otp')" data-lang="fr">Commencer gratuitement</button>
+      <div class="tier-devices" data-lang="en">2 devices · 1 active at a time</div><div class="tier-devices" data-lang="fr">2 appareils · 1 actif à la fois</div>
+      <ul class="tier-feats"><li class="yes" data-lang="en">VPN tunnel anywhere</li><li class="yes" data-lang="fr">Tunnel VPN partout</li><li class="yes" data-lang="en">14-day free trial</li><li class="yes" data-lang="fr">14 jours gratuits</li></ul>
+      <button class="btn btn-ghost btn-full" onclick="om('m-otp')" data-lang="en">Start free</button><button class="btn btn-ghost btn-full" onclick="om('m-otp')" data-lang="fr">Commencer</button>
     </div>
     <div class="tier hot">
-      <div class="tier-pop" data-lang="en">Most popular</div>
-      <div class="tier-pop" data-lang="fr">Le plus populaire</div>
-      <div class="tier-name">Plus</div>
-      <div class="tier-price">5,000 <span>CFA/mo</span></div>
+      <div class="tier-pop" data-lang="en">Most popular</div><div class="tier-pop" data-lang="fr">Le plus populaire</div>
+      <div class="tier-name">Plus</div><div class="tier-price">5,000 <span>CFA/mo</span></div>
       <div class="tier-speed">↑ 15 Mbps guaranteed</div>
-      <div class="tier-devices" data-lang="en">3 devices · 2 active simultaneously</div>
-      <div class="tier-devices" data-lang="fr">3 appareils · 2 actifs simultanément</div>
-      <ul class="tier-feats">
-        <li class="yes" data-lang="en">WiFi proximity + VPN tunnel</li>
-        <li class="yes" data-lang="fr">WiFi proximité + tunnel VPN</li>
-        <li class="yes" data-lang="en">14-day free trial</li>
-        <li class="yes" data-lang="fr">14 jours d'essai gratuit</li>
-        <li class="yes" data-lang="en">Data rollover unused GB</li>
-        <li class="yes" data-lang="fr">Report des Go non utilisés</li>
-        <li class="yes" data-lang="en">Priority node routing</li>
-        <li class="yes" data-lang="fr">Routage prioritaire</li>
-        <li class="yes" data-lang="en">Virtual card for online payments</li>
-        <li class="yes" data-lang="fr">Carte virtuelle pour paiements en ligne</li>
-      </ul>
-      <button class="btn btn-accent btn-full" onclick="om('m-otp')" data-lang="en">Start free</button>
-      <button class="btn btn-accent btn-full" onclick="om('m-otp')" data-lang="fr">Commencer gratuitement</button>
+      <div class="tier-devices" data-lang="en">3 devices · 2 active simultaneously</div><div class="tier-devices" data-lang="fr">3 appareils · 2 actifs simultanément</div>
+      <ul class="tier-feats"><li class="yes" data-lang="en">WiFi proximity + VPN</li><li class="yes" data-lang="fr">WiFi + tunnel VPN</li><li class="yes" data-lang="en">14-day free trial</li><li class="yes" data-lang="fr">14 jours gratuits</li><li class="yes" data-lang="en">Data rollover</li><li class="yes" data-lang="fr">Report des données</li><li class="yes" data-lang="en">Virtual card</li><li class="yes" data-lang="fr">Carte virtuelle</li></ul>
+      <button class="btn btn-accent btn-full" onclick="om('m-otp')" data-lang="en">Start free</button><button class="btn btn-accent btn-full" onclick="om('m-otp')" data-lang="fr">Commencer</button>
     </div>
     <div class="tier">
-      <div class="tier-name">Elite</div>
-      <div class="tier-price">9,000 <span>CFA/mo</span></div>
+      <div class="tier-name">Elite</div><div class="tier-price">9,000 <span>CFA/mo</span></div>
       <div class="tier-speed">↑ 30 Mbps guaranteed</div>
-      <div class="tier-devices" data-lang="en">5 devices · 3 active simultaneously</div>
-      <div class="tier-devices" data-lang="fr">5 appareils · 3 actifs simultanément</div>
-      <ul class="tier-feats">
-        <li class="yes" data-lang="en">WiFi + VPN + cloud phone</li>
-        <li class="yes" data-lang="fr">WiFi + VPN + téléphone cloud</li>
-        <li class="yes" data-lang="en">14-day free trial</li>
-        <li class="yes" data-lang="fr">14 jours d'essai gratuit</li>
-        <li class="yes" data-lang="en">Hybrid node — best uptime</li>
-        <li class="yes" data-lang="fr">Nœud hybride — meilleure disponibilité</li>
-        <li class="yes" data-lang="en">Never throttled first</li>
-        <li class="yes" data-lang="fr">Jamais bridé en premier</li>
-        <li class="yes" data-lang="en">Roam between nodes</li>
-        <li class="yes" data-lang="fr">Itinérance entre nœuds</li>
-        <li class="yes" data-lang="en">Virtual card + USDT payments</li>
-        <li class="yes" data-lang="fr">Carte virtuelle + paiements USDT</li>
-      </ul>
-      <button class="btn btn-ghost btn-full" onclick="om('m-otp')" data-lang="en">Start free</button>
-      <button class="btn btn-ghost btn-full" onclick="om('m-otp')" data-lang="fr">Commencer gratuitement</button>
+      <div class="tier-devices" data-lang="en">5 devices · 3 active simultaneously</div><div class="tier-devices" data-lang="fr">5 appareils · 3 actifs simultanément</div>
+      <ul class="tier-feats"><li class="yes" data-lang="en">WiFi + VPN + cloud phone</li><li class="yes" data-lang="fr">WiFi + VPN + téléphone cloud</li><li class="yes" data-lang="en">14-day free trial</li><li class="yes" data-lang="fr">14 jours gratuits</li><li class="yes" data-lang="en">Never throttled</li><li class="yes" data-lang="fr">Jamais bridé</li><li class="yes" data-lang="en">USDT payments</li><li class="yes" data-lang="fr">Paiements USDT</li></ul>
+      <button class="btn btn-ghost btn-full" onclick="om('m-otp')" data-lang="en">Start free</button><button class="btn btn-ghost btn-full" onclick="om('m-otp')" data-lang="fr">Commencer</button>
     </div>
   </div>
 </div>
 
-<!-- TRIAL BANNER -->
 <div class="trial-wrap">
-  <h3 data-lang="en">14 days free. Just your phone number.</h3>
-  <h3 data-lang="fr">14 jours gratuits. Juste votre numéro.</h3>
-  <p data-lang="en">Download Nod. Enter your number. Connect. No card, no email, no contract. Cancel any time.</p>
-  <p data-lang="fr">Téléchargez Nod. Entrez votre numéro. Connectez-vous. Sans carte, sans email, sans contrat. Annulez à tout moment.</p>
-  <button class="btn btn-white btn-lg" onclick="om('m-otp')" data-lang="en">Get my 14 days free →</button>
-  <button class="btn btn-white btn-lg" onclick="om('m-otp')" data-lang="fr">Obtenir mes 14 jours gratuits →</button>
+  <h3 data-lang="en">14 days free. Just your phone number.</h3><h3 data-lang="fr">14 jours gratuits. Juste votre numéro.</h3>
+  <p data-lang="en">Download Nod. Enter your number. Connect. No card, no email, no contract.</p><p data-lang="fr">Téléchargez Nod. Entrez votre numéro. Connectez-vous. Sans carte, sans email.</p>
+  <button class="btn btn-white btn-lg" onclick="om('m-otp')" data-lang="en">Get my 14 days free →</button><button class="btn btn-white btn-lg" onclick="om('m-otp')" data-lang="fr">Obtenir mes 14 jours gratuits →</button>
+</div>
+<footer><p>Nod. — <span data-lang="en">Community internet for Central Africa. Not a telecom. A platform.</span><span data-lang="fr">Internet communautaire pour l'Afrique centrale. Pas un opérateur. Une plateforme.</span></p></footer>
 </div>
 
-<footer>
-  <p>Nod. — <span data-lang="en">Community internet for Central Africa. Not a telecom. A platform.</span><span data-lang="fr">Internet communautaire pour l'Afrique centrale. Pas un opérateur. Une plateforme.</span></p>
-  <p style="margin-top:5px;color:var(--g800)">Cameroon · Gabon · Congo · Nigeria · Diaspora nodes worldwide</p>
-</footer>
-</div>
-
-<!-- ══════ SUBSCRIBER DASH ══════ -->
+<!-- SUBSCRIBER DASHBOARD -->
 <div class="screen" id="s-sub">
-<nav class="nav">
-  <div class="logo" onclick="go('s-land')">Nod<span class="logo-dot">.</span></div>
-  <div class="nav-r"><button class="btn btn-ghost" onclick="go('s-land')">←</button></div>
-</nav>
+<nav class="nav"><div class="logo" onclick="go('s-land')">Nod<span class="logo-dot">.</span></div><div class="nav-r"><button class="btn btn-ghost" onclick="go('s-land')">←</button></div></nav>
 <div class="dash">
   <aside class="sb">
     <div class="sb-logo" onclick="go('s-land')">Nod<span>.</span></div>
     <nav class="sbnav">
       <button class="ni on" onclick="ST('ov')"><span class="ni-ic">◎</span><span data-lang="en">Overview</span><span data-lang="fr">Aperçu</span></button>
-      <button class="ni" onclick="ST('spd')"><span class="ni-ic">⚡</span><span data-lang="en">Speed test</span><span data-lang="fr">Test de vitesse</span></button>
+      <button class="ni" onclick="ST('spd')"><span class="ni-ic">⚡</span><span data-lang="en">Speed test</span><span data-lang="fr">Test vitesse</span></button>
       <button class="ni" onclick="ST('vpn')"><span class="ni-ic">⬡</span><span data-lang="en">VPN tunnel</span><span data-lang="fr">Tunnel VPN</span></button>
       <button class="ni" onclick="ST('dev')"><span class="ni-ic">📱</span><span data-lang="en">My devices</span><span data-lang="fr">Mes appareils</span></button>
       <button class="ni" onclick="ST('vcard')"><span class="ni-ic">💳</span><span data-lang="en">Virtual card</span><span data-lang="fr">Carte virtuelle</span></button>
-      <button class="ni" onclick="ST('ref')"><span class="ni-ic">↗</span><span data-lang="en">Refer &amp; earn</span><span data-lang="fr">Parrainer &amp; gagner</span></button>
+      <button class="ni" onclick="ST('ref')"><span class="ni-ic">↗</span><span data-lang="en">Refer &amp; earn</span><span data-lang="fr">Parrainer</span></button>
     </nav>
-    <div class="sb-foot">
-      <div class="upill">
-        <div class="av av-sub">AK</div>
-        <div><div class="u-n">Ariel Kamga</div><div class="u-t">Plus · 9 days free</div></div>
-      </div>
-    </div>
+    <div class="sb-foot"><div class="upill"><div class="av av-sub" id="sub-av">?</div><div><div class="u-n" id="sub-name">Loading...</div><div class="u-t" id="sub-tier">Plus · 14 days free</div></div></div></div>
   </aside>
-
   <main class="dmain">
-    <!-- OVERVIEW -->
     <div id="st-ov">
-      <div class="dhead"><h2 data-lang="en">Good morning, Ariel 👋</h2><h2 data-lang="fr">Bonjour, Ariel 👋</h2><p data-lang="en">Connected via VPN → Bastos Node 7 · <span style="color:var(--accent)">24.3 Mbps live</span></p><p data-lang="fr">Connecté via VPN → Nœud Bastos 7 · <span style="color:var(--accent)">24.3 Mbps en direct</span></p></div>
+      <div class="dhead"><h2 data-lang="en">Welcome to Nod 👋</h2><h2 data-lang="fr">Bienvenue sur Nod 👋</h2><p data-lang="en">Connected via VPN → Bastos Node 7 · <span style="color:var(--accent)">24.3 Mbps live</span></p><p data-lang="fr">Connecté via VPN → Nœud Bastos 7 · <span style="color:var(--accent)">24.3 Mbps en direct</span></p></div>
       <div class="sg">
-        <div class="sc"><div class="sl" data-lang="en">Live speed</div><div class="sl" data-lang="fr">Vitesse en direct</div><div class="sv ac">24.3</div><div class="ss" data-lang="en">Mbps · 20× MTN</div><div class="ss" data-lang="fr">Mbps · 20× MTN</div></div>
-        <div class="sc"><div class="sl" data-lang="en">Tunnel</div><div class="sl" data-lang="fr">Tunnel</div><div class="sv" style="font-size:14px;padding-top:8px">Active ●</div><div class="ss up" data-lang="en">Encrypted</div><div class="ss up" data-lang="fr">Chiffré</div></div>
-        <div class="sc"><div class="sl" data-lang="en">Data used</div><div class="sl" data-lang="fr">Données utilisées</div><div class="sv">18.4</div><div class="ss" data-lang="en">GB + 11.6 rollover</div><div class="ss" data-lang="fr">Go + 11.6 reportés</div></div>
-        <div class="sc"><div class="sl" data-lang="en">Free trial</div><div class="sl" data-lang="fr">Essai gratuit</div><div class="sv">9</div><div class="ss up" data-lang="en">days left</div><div class="ss up" data-lang="fr">jours restants</div></div>
+        <div class="sc"><div class="sl" data-lang="en">Live speed</div><div class="sl" data-lang="fr">Vitesse</div><div class="sv ac">24.3</div><div class="ss" data-lang="en">Mbps · 20× MTN</div></div>
+        <div class="sc"><div class="sl" data-lang="en">Tunnel</div><div class="sl" data-lang="fr">Tunnel</div><div class="sv" style="font-size:14px;padding-top:8px">Active ●</div><div class="ss up">Encrypted</div></div>
+        <div class="sc"><div class="sl" data-lang="en">Free trial</div><div class="sl" data-lang="fr">Essai gratuit</div><div class="sv">14</div><div class="ss up" data-lang="en">days left</div><div class="ss up" data-lang="fr">jours restants</div></div>
+        <div class="sc"><div class="sl">Referrals</div><div class="sv">0</div><div class="ss" data-lang="en">invite friends</div><div class="ss" data-lang="fr">invitez des amis</div></div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
-        <div class="card"><div class="ctitle" data-lang="en">VPN tunnel</div><div class="ctitle" data-lang="fr">Tunnel VPN</div>
-          <div class="vpns live"><div class="vdot g"></div><div class="vi"><div class="vn">Bastos Node 7</div><div class="vd" data-lang="en">Starlink · 120m · Encrypted</div><div class="vd" data-lang="fr">Starlink · 120m · Chiffré</div></div><div class="vping">12ms</div></div>
-          <div class="vpns idle"><div class="vdot x"></div><div class="vi"><div class="vn" style="color:var(--g500)">Melen Node 3</div><div class="vd" data-lang="en">Camtel fiber · Backup</div><div class="vd" data-lang="fr">Fibre Camtel · Sauvegarde</div></div><div class="vping" style="color:var(--g700)">34ms</div></div>
-        </div>
-        <div class="card"><div class="ctitle" data-lang="en">Data usage</div><div class="ctitle" data-lang="fr">Utilisation des données</div>
-          <div style="margin-bottom:12px"><div class="um" style="margin-bottom:5px"><span data-lang="en">18.4 GB used</span><span data-lang="fr">18.4 Go utilisés</span><span>30 GB</span></div><div class="ubw"><div class="ub" style="width:61%"></div></div></div>
-          <div style="display:inline-flex;align-items:center;gap:6px;background:var(--bd);border:1px solid rgba(77,166,255,0.12);color:var(--blue);font-size:11px;padding:3px 10px;border-radius:100px">↻ <span data-lang="en">11.6 GB rolled over</span><span data-lang="fr">11.6 Go reportés</span></div>
-        </div>
+      <div class="card"><div class="ctitle" data-lang="en">VPN tunnel</div><div class="ctitle" data-lang="fr">Tunnel VPN</div>
+        <div class="vpns live"><div class="vdot g"></div><div class="vi"><div class="vn">Bastos Node 7</div><div class="vd">Starlink · 120m · Encrypted</div></div><div class="vping">12ms</div></div>
       </div>
-      <div class="card"><div class="ctitle" data-lang="en">Today's bandwidth</div><div class="ctitle" data-lang="fr">Bande passante aujourd'hui</div><div class="bwc" id="sub-bw"></div><div class="bwl"><span>00</span><span>06</span><span>12</span><span>18</span><span data-lang="en">now</span><span data-lang="fr">maintenant</span></div></div>
+      <div class="card"><div class="ctitle" data-lang="en">Today's activity</div><div class="ctitle" data-lang="fr">Activité aujourd'hui</div><div class="bwc" id="sub-bw"></div><div class="bwl"><span>00</span><span>06</span><span>12</span><span>18</span><span>now</span></div></div>
       <div class="card"><div class="ctitle" data-lang="en">Alerts</div><div class="ctitle" data-lang="fr">Alertes</div>
-        <div class="notif"><div class="nic g">⚡</div><div><div class="ntxt"><strong data-lang="en">Speed hit 31 Mbps</strong><strong data-lang="fr">Vitesse atteinte 31 Mbps</strong> — <span data-lang="en">tap to share your speed card</span><span data-lang="fr">appuyez pour partager</span></div><div class="ntime">2 min ago</div></div></div>
-        <div class="notif"><div class="nic g">👥</div><div><div class="ntxt"><strong>Bertrand</strong> <span data-lang="en">joined via your link — 1 free month added</span><span data-lang="fr">a rejoint via votre lien — 1 mois gratuit ajouté</span></div><div class="ntime" data-lang="en">Yesterday</div><div class="ntime" data-lang="fr">Hier</div></div></div>
-        <div class="notif"><div class="nic w">📅</div><div><div class="ntxt" data-lang="en">Free trial ends in <strong>9 days</strong> — no card needed yet</div><div class="ntxt" data-lang="fr">Essai gratuit se termine dans <strong>9 jours</strong> — aucune carte requise</div><div class="ntime">3 days ago</div></div></div>
+        <div class="notif"><div class="nic g">⚡</div><div><div class="ntxt" data-lang="en"><strong>Trial started!</strong> 14 days of fast internet. No card needed.</div><div class="ntxt" data-lang="fr"><strong>Essai démarré!</strong> 14 jours d'internet rapide. Sans carte.</div><div class="ntime">Just now</div></div></div>
+        <div class="notif"><div class="nic g">↗</div><div><div class="ntxt" data-lang="en">Share your referral link to earn free months.</div><div class="ntxt" data-lang="fr">Partagez votre lien pour gagner des mois gratuits.</div><div class="ntime">Tip</div></div></div>
       </div>
     </div>
-
-    <!-- SPEED TEST -->
     <div id="st-spd" style="display:none">
       <div class="dhead"><h2 data-lang="en">Speed test</h2><h2 data-lang="fr">Test de vitesse</h2></div>
       <div class="card" style="text-align:center">
@@ -622,9 +392,9 @@ footer p{font-size:12px;color:var(--g700)}
           </div>
         </div>
         <div style="display:flex;justify-content:center;gap:36px;margin-bottom:22px">
-          <div style="text-align:center"><div style="font-size:10px;color:var(--g700);margin-bottom:3px;text-transform:uppercase;letter-spacing:.06em" data-lang="en">Upload</div><div style="font-family:var(--mono);font-size:16px">8.1 Mbps</div></div>
+          <div style="text-align:center"><div style="font-size:10px;color:var(--g700);margin-bottom:3px;text-transform:uppercase;letter-spacing:.06em">Upload</div><div style="font-family:var(--mono);font-size:16px">8.1 Mbps</div></div>
           <div style="text-align:center"><div style="font-size:10px;color:var(--g700);margin-bottom:3px;text-transform:uppercase;letter-spacing:.06em">Ping</div><div style="font-family:var(--mono);font-size:16px">12 ms</div></div>
-          <div style="text-align:center"><div style="font-size:10px;color:var(--g700);margin-bottom:3px;text-transform:uppercase;letter-spacing:.06em" data-lang="en">vs MTN</div><div style="font-family:var(--mono);font-size:16px;color:var(--accent)">20×</div></div>
+          <div style="text-align:center"><div style="font-size:10px;color:var(--g700);margin-bottom:3px;text-transform:uppercase;letter-spacing:.06em">vs MTN</div><div style="font-family:var(--mono);font-size:16px;color:var(--accent)">20×</div></div>
         </div>
         <button class="btn btn-accent" onclick="runSpeedTest()" data-lang="en">Run speed test</button>
         <button class="btn btn-accent" onclick="runSpeedTest()" data-lang="fr">Lancer le test</button>
@@ -635,90 +405,55 @@ footer p{font-size:12px;color:var(--g700)}
           <div class="sc-unit">Mbps</div>
           <div class="sc-vs" data-lang="en">vs MTN 1.2 Mbps · <span style="color:var(--accent)">20× faster</span></div>
           <div class="sc-vs" data-lang="fr">vs MTN 1.2 Mbps · <span style="color:var(--accent)">20× plus rapide</span></div>
-          <div class="sc-tag">getnod.com · <span data-lang="en">14 days free · no card</span><span data-lang="fr">14 jours gratuits · sans carte</span></div>
-          <button class="btn btn-outline" style="margin-top:14px;font-size:12px" onclick="toast('Speed card copied — share on WhatsApp &amp; TikTok! ↗')" data-lang="en">Share this card ↗</button>
-          <button class="btn btn-outline" style="margin-top:14px;font-size:12px" onclick="toast('Carte de vitesse copiée — partagez! ↗')" data-lang="fr">Partager ↗</button>
+          <div class="sc-tag">getnod.com · <span data-lang="en">14 days free · no card</span><span data-lang="fr">14 jours gratuits</span></div>
+          <button class="btn btn-outline" style="margin-top:14px;font-size:12px" onclick="toast(lang==='fr'?'Carte copiée — partagez sur WhatsApp!':'Speed card copied — share on WhatsApp! ↗')" data-lang="en">Share this card ↗</button>
+          <button class="btn btn-outline" style="margin-top:14px;font-size:12px" onclick="toast('Carte copiée — partagez sur WhatsApp! ↗')" data-lang="fr">Partager ↗</button>
         </div>
       </div>
     </div>
-
-    <!-- VPN TUNNEL -->
     <div id="st-vpn" style="display:none">
       <div class="dhead"><h2 data-lang="en">VPN tunnel</h2><h2 data-lang="fr">Tunnel VPN</h2></div>
       <div class="card">
-        <div class="vpns live" style="margin-bottom:14px"><div class="vdot g"></div><div class="vi"><div class="vn" data-lang="en">Connected — all traffic encrypted</div><div class="vn" data-lang="fr">Connecté — tout le trafic chiffré</div><div class="vd" data-lang="en">Your phone → Nod → Bastos Node 7 → Starlink → Internet</div><div class="vd" data-lang="fr">Votre téléphone → Nod → Nœud Bastos 7 → Starlink → Internet</div></div></div>
+        <div class="vpns live" style="margin-bottom:14px"><div class="vdot g"></div><div class="vi"><div class="vn" data-lang="en">Connected — all traffic encrypted</div><div class="vn" data-lang="fr">Connecté — tout le trafic chiffré</div><div class="vd" data-lang="en">Your phone → Nod → Bastos Node 7 → Starlink → Internet</div></div></div>
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:14px">
           <div style="background:var(--bg);border-radius:var(--rs);padding:11px;border:1px solid rgba(255,255,255,0.05);text-align:center"><div style="font-size:10px;color:var(--g700);margin-bottom:3px">Protocol</div><div style="font-family:var(--mono);font-size:12px">WireGuard</div></div>
           <div style="background:var(--bg);border-radius:var(--rs);padding:11px;border:1px solid rgba(255,255,255,0.05);text-align:center"><div style="font-size:10px;color:var(--g700);margin-bottom:3px">Latency</div><div style="font-family:var(--mono);font-size:12px;color:var(--accent)">12 ms</div></div>
-          <div style="background:var(--bg);border-radius:var(--rs);padding:11px;border:1px solid rgba(255,255,255,0.05);text-align:center"><div style="font-size:10px;color:var(--g700);margin-bottom:3px" data-lang="en">Encryption</div><div style="font-family:var(--mono);font-size:12px">AES-256</div></div>
+          <div style="background:var(--bg);border-radius:var(--rs);padding:11px;border:1px solid rgba(255,255,255,0.05);text-align:center"><div style="font-size:10px;color:var(--g700);margin-bottom:3px">Encryption</div><div style="font-family:var(--mono);font-size:12px">AES-256</div></div>
         </div>
-        <div class="ctitle" data-lang="en">Nearby nodes</div><div class="ctitle" data-lang="fr">Nœuds à proximité</div>
-        <div class="vpns live"><div class="vdot g"></div><div class="vi"><div class="vn">Bastos Node 7 <span style="font-size:10px;padding:2px 7px;background:var(--ad);color:var(--accent);border-radius:100px;margin-left:6px">Starlink</span></div><div class="vd" data-lang="en">120m · 24 Mbps · 6/8 slots · Quality 96%</div><div class="vd" data-lang="fr">120m · 24 Mbps · 6/8 places · Qualité 96%</div></div><div class="vping">12ms ●</div></div>
-        <div class="vpns idle"><div class="vdot x"></div><div class="vi"><div class="vn" style="color:var(--g500)">Melen Node 3 <span style="font-size:10px;padding:2px 7px;background:var(--bd);color:var(--blue);border-radius:100px;margin-left:6px">Fiber</span></div><div class="vd" data-lang="en">380m · 18 Mbps · 4/8 slots · Quality 99%</div><div class="vd" data-lang="fr">380m · 18 Mbps · 4/8 places · Qualité 99%</div></div><div class="vping" style="color:var(--g700)">34ms</div></div>
       </div>
     </div>
-
-    <!-- DEVICES -->
     <div id="st-dev" style="display:none">
-      <div class="dhead"><h2 data-lang="en">My devices</h2><h2 data-lang="fr">Mes appareils</h2><p data-lang="en">Plus plan · 3 devices · 2 active simultaneously</p><p data-lang="fr">Forfait Plus · 3 appareils · 2 actifs simultanément</p></div>
+      <div class="dhead"><h2 data-lang="en">My devices</h2><h2 data-lang="fr">Mes appareils</h2></div>
       <div class="card">
-        <div class="dev-row"><div class="dev-icon">📱</div><div class="dev-info"><div class="dev-name">Samsung Galaxy A54</div><div class="dev-detail" data-lang="en">This device · registered Jan 15</div><div class="dev-detail" data-lang="fr">Cet appareil · enregistré 15 jan</div></div><div class="dev-status" data-lang="en">Active</div><div class="dev-status" data-lang="fr">Actif</div></div>
-        <div class="dev-row"><div class="dev-icon">📱</div><div class="dev-info"><div class="dev-name">Tecno Camon 20</div><div class="dev-detail" data-lang="en">Registered Jan 16</div><div class="dev-detail" data-lang="fr">Enregistré 16 jan</div></div><div class="dev-status off" data-lang="en">Idle</div><div class="dev-status off" data-lang="fr">Inactif</div></div>
-        <div class="dev-row" style="opacity:.4"><div class="dev-icon">➕</div><div class="dev-info"><div class="dev-name" data-lang="en">Add 3rd device (1 remaining)</div><div class="dev-name" data-lang="fr">Ajouter 3ème appareil (1 restant)</div></div></div>
+        <div class="dev-row"><div class="dev-icon">📱</div><div class="dev-info"><div class="dev-name" data-lang="en">This device</div><div class="dev-name" data-lang="fr">Cet appareil</div><div class="dev-detail" data-lang="en">Registered now</div><div class="dev-detail" data-lang="fr">Enregistré maintenant</div></div><div class="dev-status" data-lang="en">Active</div><div class="dev-status" data-lang="fr">Actif</div></div>
       </div>
-      <div style="background:var(--amberd);border:1px solid rgba(255,170,0,0.12);border-radius:var(--rs);padding:12px 14px;font-size:12px;color:var(--g500);line-height:1.7" data-lang="en">Each device is verified by its hardware ID. Sharing your account with others will trigger an automatic suspension. Upgrade to Elite for 5 devices.</div>
-      <div style="background:var(--amberd);border:1px solid rgba(255,170,0,0.12);border-radius:var(--rs);padding:12px 14px;font-size:12px;color:var(--g500);line-height:1.7" data-lang="fr">Chaque appareil est vérifié par son identifiant matériel. Le partage de votre compte déclenchera une suspension automatique. Passez à Elite pour 5 appareils.</div>
+      <p style="font-size:12px;color:var(--g500);line-height:1.7;padding:12px 0" data-lang="en">Plus plan allows 3 devices. Elite allows 5. Each device is verified by hardware ID — account sharing triggers automatic suspension.</p>
+      <p style="font-size:12px;color:var(--g500);line-height:1.7;padding:12px 0" data-lang="fr">Le forfait Plus permet 3 appareils. Elite permet 5. Chaque appareil est vérifié par identifiant matériel.</p>
     </div>
-
-    <!-- VIRTUAL CARD -->
     <div id="st-vcard" style="display:none">
-      <div class="dhead"><h2 data-lang="en">Virtual card</h2><h2 data-lang="fr">Carte virtuelle</h2><p data-lang="en">Pay for any online service with your Nod balance</p><p data-lang="fr">Payez n'importe quel service en ligne avec votre solde Nod</p></div>
-      <div class="vcard">
-        <div class="vc-badge">VISA</div>
-        <div class="vc-label" data-lang="en">Card number</div><div class="vc-label" data-lang="fr">Numéro de carte</div>
-        <div class="vc-num">4242 •••• •••• 7841</div>
-        <div class="vc-row">
-          <div class="vc-field"><div class="vc-label" data-lang="en">Expires</div><div class="vc-label" data-lang="fr">Expiration</div><div class="vc-val">01/28</div></div>
-          <div class="vc-field"><div class="vc-label">CVV</div><div class="vc-val">•••</div></div>
-          <div class="vc-field"><div class="vc-label" data-lang="en">Balance</div><div class="vc-label" data-lang="fr">Solde</div><div class="vc-val" style="color:var(--accent)">5,000 CFA</div></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="ctitle" data-lang="en">Top up via MoMo</div><div class="ctitle" data-lang="fr">Recharger via MoMo</div>
-        <div class="ptabs">
-          <button class="ptab on" data-lang="en">MTN MoMo</button>
-          <button class="ptab on" data-lang="fr">MTN MoMo</button>
-          <button class="ptab" data-lang="en">Orange Money</button>
-          <button class="ptab" data-lang="fr">Orange Money</button>
-          <button class="ptab" data-lang="en">USDT</button>
-          <button class="ptab" data-lang="fr">USDT</button>
-        </div>
-        <div class="fg"><label class="fl" data-lang="en">Amount (CFA)</label><label class="fl" data-lang="fr">Montant (CFA)</label><input class="fi" type="number" placeholder="5000"></div>
-        <button class="btn btn-accent btn-full" style="padding:12px" onclick="toast('Top-up initiated — approve on your MoMo app')" data-lang="en">Top up card →</button>
-        <button class="btn btn-accent btn-full" style="padding:12px" onclick="toast('Rechargement initié — approuvez sur votre app MoMo')" data-lang="fr">Recharger la carte →</button>
-        <p style="font-size:11px;color:var(--g700);margin-top:10px;line-height:1.6" data-lang="en">Use this card number to pay for Netflix, Spotify, online shopping, or any international service. Powered by Grey.co virtual card infrastructure.</p>
-        <p style="font-size:11px;color:var(--g700);margin-top:10px;line-height:1.6" data-lang="fr">Utilisez ce numéro de carte pour payer Netflix, Spotify, les achats en ligne ou tout service international. Propulsé par l'infrastructure Grey.co.</p>
+      <div class="dhead"><h2 data-lang="en">Virtual card</h2><h2 data-lang="fr">Carte virtuelle</h2></div>
+      <div class="vcard"><div class="vc-badge">VISA</div><div class="vc-label" data-lang="en">Card number</div><div class="vc-label" data-lang="fr">Numéro</div><div class="vc-num">4242 •••• •••• 7841</div><div class="vc-row"><div class="vc-field"><div class="vc-label">Expires</div><div class="vc-val">01/28</div></div><div class="vc-field"><div class="vc-label">CVV</div><div class="vc-val">•••</div></div><div class="vc-field"><div class="vc-label" data-lang="en">Balance</div><div class="vc-label" data-lang="fr">Solde</div><div class="vc-val" style="color:var(--accent)">0 CFA</div></div></div></div>
+      <div class="card"><div class="ctitle" data-lang="en">Top up via MoMo</div><div class="ctitle" data-lang="fr">Recharger via MoMo</div>
+        <div class="ptabs"><button class="ptab on">MTN MoMo</button><button class="ptab">Orange Money</button><button class="ptab">USDT</button></div>
+        <div class="fg"><label class="fl" data-lang="en">Amount (CFA)</label><label class="fl" data-lang="fr">Montant (CFA)</label><input class="fi" type="number" placeholder="5000" id="topup-amount"></div>
+        <button class="btn btn-accent btn-full" style="padding:12px" onclick="toast(lang==='fr'?'Rechargement initié — approuvez sur MoMo':'Top-up initiated — approve on MoMo app')" data-lang="en">Top up card →</button>
+        <button class="btn btn-accent btn-full" style="padding:12px" onclick="toast('Rechargement initié — approuvez sur votre app MoMo')" data-lang="fr">Recharger →</button>
+        <p style="font-size:11px;color:var(--g700);margin-top:10px;line-height:1.6" data-lang="en">Powered by Grey.co virtual card infrastructure. Use anywhere Visa is accepted online.</p>
       </div>
     </div>
-
-    <!-- REFERRAL -->
     <div id="st-ref" style="display:none">
-      <div class="dhead"><h2 data-lang="en">Refer &amp; earn</h2><h2 data-lang="fr">Parrainer &amp; gagner</h2><p data-lang="en">Every friend who subscribes = 1 free month for you</p><p data-lang="fr">Chaque ami qui s'abonne = 1 mois gratuit pour vous</p></div>
-      <div class="card">
-        <div class="ctitle" data-lang="en">Your link</div><div class="ctitle" data-lang="fr">Votre lien</div>
+      <div class="dhead"><h2 data-lang="en">Refer &amp; earn</h2><h2 data-lang="fr">Parrainer &amp; gagner</h2></div>
+      <div class="card"><div class="ctitle" data-lang="en">Your referral link</div><div class="ctitle" data-lang="fr">Votre lien</div>
         <div style="background:var(--bg);border-radius:var(--rs);padding:11px 13px;display:flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,0.07);margin-bottom:14px">
-          <div style="font-family:var(--mono);font-size:12px;color:var(--accent);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">getnod.com/join/ariel-k7x2</div>
-          <button style="font-size:11px;padding:5px 11px;background:var(--ad);color:var(--accent);border:1px solid rgba(0,232,122,0.15);border-radius:var(--rs);cursor:pointer;font-family:var(--font)" onclick="toast('Link copied! Share on WhatsApp ↗')" data-lang="en">Copy</button>
+          <div style="font-family:var(--mono);font-size:12px;color:var(--accent);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" id="ref-link">getnod.com/join/...</div>
+          <button style="font-size:11px;padding:5px 11px;background:var(--ad);color:var(--accent);border:1px solid rgba(0,232,122,0.15);border-radius:var(--rs);cursor:pointer;font-family:var(--font)" onclick="toast(lang==='fr'?'Lien copié! Partagez sur WhatsApp ↗':'Link copied! Share on WhatsApp ↗')" data-lang="en">Copy</button>
           <button style="font-size:11px;padding:5px 11px;background:var(--ad);color:var(--accent);border:1px solid rgba(0,232,122,0.15);border-radius:var(--rs);cursor:pointer;font-family:var(--font)" onclick="toast('Lien copié! Partagez sur WhatsApp ↗')" data-lang="fr">Copier</button>
         </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-          <div style="background:var(--bg);border-radius:var(--rs);padding:14px;border:1px solid rgba(255,255,255,0.05)"><div style="font-size:10px;color:var(--g700);margin-bottom:4px" data-lang="en">Referred</div><div style="font-size:10px;color:var(--g700);margin-bottom:4px" data-lang="fr">Parrainés</div><div style="font-family:var(--display);font-size:26px;font-weight:700">3</div></div>
-          <div style="background:var(--ad);border-radius:var(--rs);padding:14px;border:1px solid rgba(0,232,122,0.1)"><div style="font-size:10px;color:var(--accent);margin-bottom:4px" data-lang="en">Free months</div><div style="font-size:10px;color:var(--accent);margin-bottom:4px" data-lang="fr">Mois gratuits</div><div style="font-family:var(--display);font-size:26px;font-weight:700;color:var(--accent)">1</div></div>
-        </div>
+        <p style="font-size:13px;color:var(--g500);line-height:1.7" data-lang="en">Every friend who subscribes after their free trial = 1 free month for you, automatically.</p>
+        <p style="font-size:13px;color:var(--g500);line-height:1.7" data-lang="fr">Chaque ami qui s'abonne = 1 mois gratuit pour vous, automatiquement.</p>
       </div>
     </div>
   </main>
-
   <nav class="mobnav"><div class="mnw">
     <button class="mni on" onclick="ST('ov')"><span class="mnic">◎</span><span data-lang="en">Home</span><span data-lang="fr">Accueil</span></button>
     <button class="mni" onclick="ST('spd')"><span class="mnic">⚡</span><span data-lang="en">Speed</span><span data-lang="fr">Vitesse</span></button>
@@ -729,12 +464,9 @@ footer p{font-size:12px;color:var(--g700)}
 </div>
 </div>
 
-<!-- ══════ OWNER DASH ══════ -->
+<!-- OWNER DASHBOARD -->
 <div class="screen" id="s-own">
-<nav class="nav">
-  <div class="logo" onclick="go('s-land')">Nod<span class="logo-dot">.</span></div>
-  <div class="nav-r"><button class="btn btn-ghost" onclick="go('s-land')">←</button></div>
-</nav>
+<nav class="nav"><div class="logo" onclick="go('s-land')">Nod<span class="logo-dot">.</span></div><div class="nav-r"><button class="btn btn-ghost" onclick="go('s-land')">←</button></div></nav>
 <div class="dash">
   <aside class="sb">
     <div class="sb-logo" onclick="go('s-land')">Nod<span>.</span></div>
@@ -743,345 +475,389 @@ footer p{font-size:12px;color:var(--g700)}
       <button class="ni" onclick="OT('tl')"><span class="ni-ic">⏱</span><span data-lang="en">Setup timeline</span><span data-lang="fr">Calendrier</span></button>
       <button class="ni" onclick="OT('subs')"><span class="ni-ic">👥</span><span data-lang="en">Subscribers</span><span data-lang="fr">Abonnés</span></button>
       <button class="ni" onclick="OT('earn')"><span class="ni-ic">◈</span><span data-lang="en">Earnings</span><span data-lang="fr">Gains</span></button>
-      <button class="ni" onclick="OT('hlth')"><span class="ni-ic">◉</span><span data-lang="en">Node health</span><span data-lang="fr">Santé du nœud</span></button>
+      <button class="ni" onclick="OT('hlth')"><span class="ni-ic">◉</span><span data-lang="en">Node health</span><span data-lang="fr">Santé</span></button>
     </nav>
-    <div class="sb-foot">
-      <div class="upill">
-        <div class="av av-own">MN</div>
-        <div><div class="u-n">Marie Ngo</div><div class="u-to" data-lang="en">Node owner · Bastos</div><div class="u-to" data-lang="fr">Propriétaire · Bastos</div></div>
-      </div>
-    </div>
+    <div class="sb-foot"><div class="upill"><div class="av av-own" id="own-av">?</div><div><div class="u-n" id="own-name">Loading...</div><div class="u-to" data-lang="en">Node owner</div><div class="u-to" data-lang="fr">Propriétaire</div></div></div></div>
   </aside>
-
   <main class="dmain">
-    <!-- OV -->
     <div id="ot-ov">
-      <div class="dhead"><h2 data-lang="en">Your node earnings</h2><h2 data-lang="fr">Vos gains de nœud</h2><p>Nod Bastos · Starlink · <span style="color:var(--accent)" data-lang="en">6 active subscribers</span><span style="color:var(--accent)" data-lang="fr">6 abonnés actifs</span></p></div>
+      <div class="dhead"><h2 data-lang="en">Your node</h2><h2 data-lang="fr">Votre nœud</h2><p data-lang="en">Registered — setup starts now. Revenue begins day 14.</p><p data-lang="fr">Enregistré — la configuration commence. Les revenus démarrent au jour 14.</p></div>
       <div class="sg">
-        <div class="sc"><div class="sl" data-lang="en">This month</div><div class="sl" data-lang="fr">Ce mois</div><div class="sv ac">26,250</div><div class="ss up">CFA</div></div>
-        <div class="sc"><div class="sl" data-lang="en">Subscribers</div><div class="sl" data-lang="fr">Abonnés</div><div class="sv">6</div><div class="ss" data-lang="en">of 8 slots</div><div class="ss" data-lang="fr">sur 8 places</div></div>
-        <div class="sc"><div class="sl" data-lang="en">Uptime</div><div class="sl" data-lang="fr">Disponibilité</div><div class="sv">99.2</div><div class="ss up">%</div></div>
-        <div class="sc"><div class="sl" data-lang="en">Quality score</div><div class="sl" data-lang="fr">Score qualité</div><div class="sv">96</div><div class="ss up" data-lang="en">/ 100 · Top 10%</div><div class="ss up" data-lang="fr">/ 100 · Top 10%</div></div>
+        <div class="sc"><div class="sl" data-lang="en">Status</div><div class="sl" data-lang="fr">Statut</div><div class="sv" style="font-size:14px;padding-top:8px">Setup</div><div class="ss" data-lang="en">2-week check</div><div class="ss" data-lang="fr">Vérification 2 sem.</div></div>
+        <div class="sc"><div class="sl" data-lang="en">Subscribers</div><div class="sl" data-lang="fr">Abonnés</div><div class="sv">0</div><div class="ss" data-lang="en">goes live day 14</div><div class="ss" data-lang="fr">en ligne jour 14</div></div>
+        <div class="sc"><div class="sl" data-lang="en">Earnings</div><div class="sl" data-lang="fr">Gains</div><div class="sv">0</div><div class="ss" data-lang="en">CFA this month</div><div class="ss" data-lang="fr">CFA ce mois</div></div>
+        <div class="sc"><div class="sl" data-lang="en">Quality</div><div class="sl" data-lang="fr">Qualité</div><div class="sv ac">—</div><div class="ss" data-lang="en">pending check</div><div class="ss" data-lang="fr">vérification en cours</div></div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
-        <div class="card"><div class="ctitle" data-lang="en">Bandwidth today</div><div class="ctitle" data-lang="fr">Bande passante aujourd'hui</div><div class="bwc" id="own-bw"></div><div class="bwl"><span>00</span><span>08</span><span>16</span><span data-lang="en">now</span><span data-lang="fr">maint.</span></div></div>
-        <div class="card"><div class="ctitle" data-lang="en">Quality score</div><div class="ctitle" data-lang="fr">Score qualité</div>
-          <div class="qs"><div class="qt" data-lang="en">Uptime</div><div class="qt" data-lang="fr">Disponibilité</div><div class="qbw"><div class="qb" style="width:99%"></div></div><div class="qv">99</div></div>
-          <div class="qs"><div class="qt" data-lang="en">Speed consistency</div><div class="qt" data-lang="fr">Consistance vitesse</div><div class="qbw"><div class="qb" style="width:94%"></div></div><div class="qv">94</div></div>
-          <div class="qs"><div class="qt" data-lang="en">Satisfaction</div><div class="qt" data-lang="fr">Satisfaction</div><div class="qbw"><div class="qb" style="width:96%"></div></div><div class="qv">96</div></div>
-        </div>
-      </div>
-      <div class="card"><div class="ctitle" data-lang="en">This month's breakdown</div><div class="ctitle" data-lang="fr">Détail du mois</div>
-        <div class="er"><div class="el" data-lang="en">6 Plus subscribers × 5,000 CFA</div><div class="el" data-lang="fr">6 abonnés Plus × 5 000 CFA</div><div class="ev">30,000 CFA</div></div>
-        <div class="er"><div class="el" data-lang="en">3 Basic subscribers × 2,500 CFA</div><div class="el" data-lang="fr">3 abonnés Basic × 2 500 CFA</div><div class="ev">7,500 CFA</div></div>
-        <div class="er"><div class="el" data-lang="en">Nod platform fee (30%)</div><div class="el" data-lang="fr">Frais plateforme Nod (30%)</div><div class="ev r">−11,250 CFA</div></div>
-        <div class="er" style="border-top:1px solid rgba(255,255,255,0.08);padding-top:12px;margin-top:4px"><div class="el" style="color:var(--white);font-weight:500" data-lang="en">Your MoMo payout</div><div class="el" style="color:var(--white);font-weight:500" data-lang="fr">Votre paiement MoMo</div><div class="ev g">26,250 CFA</div></div>
-      </div>
+      <div class="setup-alert"><div class="sa-icon">⏱</div><div><div class="sa-title" data-lang="en">Your 2-week quality check has started</div><div class="sa-title" data-lang="fr">Votre vérification qualité de 2 semaines a commencé</div><div class="sa-desc" data-lang="en">We verify your speed and uptime. Nothing to do. On day 14 you receive an SMS and your node goes live for subscribers.</div><div class="sa-desc" data-lang="fr">Nous vérifions votre vitesse et disponibilité. Rien à faire. Au jour 14 vous recevez un SMS et votre nœud est en ligne.</div></div></div>
     </div>
-
-    <!-- TIMELINE -->
     <div id="ot-tl" style="display:none">
-      <div class="dhead"><h2 data-lang="en">Setup timeline</h2><h2 data-lang="fr">Calendrier de configuration</h2><p data-lang="en">Your node goes live after a 2-week quality check</p><p data-lang="fr">Votre nœud sera en ligne après une vérification qualité de 2 semaines</p></div>
-      <div class="setup-alert"><div class="sa-icon">⏱</div><div><div class="sa-title" data-lang="en">2 weeks before revenue — here's why</div><div class="sa-title" data-lang="fr">2 semaines avant les revenus — voici pourquoi</div><div class="sa-desc" data-lang="en">We verify your connection speed and uptime before subscribers connect. This protects your rating and their experience. You're not charged anything during this period.</div><div class="sa-desc" data-lang="fr">Nous vérifions la vitesse et la disponibilité de votre connexion avant que les abonnés se connectent. Cela protège votre note et leur expérience. Aucun frais pendant cette période.</div></div></div>
-      <div class="card">
-        <div class="tl">
-          <div class="tli"><div class="tll"><div class="tld done"></div><div class="tll-line"></div></div><div class="tlc"><div class="tl-day" data-lang="en">Day 0 — Complete</div><div class="tl-day" data-lang="fr">Jour 0 — Terminé</div><div class="tlt" data-lang="en">Kit ordered &amp; confirmed</div><div class="tlt" data-lang="fr">Kit commandé &amp; confirmé</div><div class="tld2" data-lang="en">Delivery within 48h in Yaoundé/Douala.</div><div class="tld2" data-lang="fr">Livraison sous 48h à Yaoundé/Douala.</div></div></div>
-          <div class="tli"><div class="tll"><div class="tld done"></div><div class="tll-line"></div></div><div class="tlc"><div class="tl-day" data-lang="en">Day 2 — Complete</div><div class="tl-day" data-lang="fr">Jour 2 — Terminé</div><div class="tlt" data-lang="en">Kit plugged in, registered automatically</div><div class="tlt" data-lang="fr">Kit branché, enregistré automatiquement</div><div class="tld2" data-lang="en">Grey cable in. Power on. Green light. Done.</div><div class="tld2" data-lang="fr">Câble gris branché. Allumé. Lumière verte. Terminé.</div></div></div>
-          <div class="tli"><div class="tll"><div class="tld now"></div><div class="tll-line"></div></div><div class="tlc"><div class="tl-day" data-lang="en">Days 3–10 — In progress</div><div class="tl-day" data-lang="fr">Jours 3–10 — En cours</div><div class="tlt" data-lang="en">Speed &amp; uptime monitoring</div><div class="tlt" data-lang="fr">Surveillance vitesse &amp; disponibilité</div><div class="tld2" data-lang="en">We measure 24/7. Must hit 95%+ uptime. You'll be alerted if anything needs attention.</div><div class="tld2" data-lang="fr">Nous mesurons 24h/24. Doit atteindre 95%+ de disponibilité. Vous serez alerté si quelque chose nécessite attention.</div></div></div>
-          <div class="tli"><div class="tll"><div class="tld soon"></div><div class="tll-line"></div></div><div class="tlc"><div class="tl-day" data-lang="en">Days 11–13</div><div class="tl-day" data-lang="fr">Jours 11–13</div><div class="tlt" data-lang="en">Your node appears on the map</div><div class="tlt" data-lang="fr">Votre nœud apparaît sur la carte</div><div class="tld2" data-lang="en">Subscribers nearby can see your node, connection type, and available slots.</div><div class="tld2" data-lang="fr">Les abonnés à proximité peuvent voir votre nœud, le type de connexion et les places disponibles.</div></div></div>
-          <div class="tli"><div class="tll"><div class="tld soon"></div></div><div class="tlc"><div class="tl-day" data-lang="en">Day 14 — Revenue starts</div><div class="tl-day" data-lang="fr">Jour 14 — Les revenus commencent</div><div class="tlt" data-lang="en">First subscribers connect. Earnings begin.</div><div class="tlt" data-lang="fr">Premiers abonnés connectés. Les gains commencent.</div><div class="tld2" data-lang="en">First MoMo payout on the 1st of next month.</div><div class="tld2" data-lang="fr">Premier paiement MoMo le 1er du mois suivant.</div></div></div>
-        </div>
-      </div>
+      <div class="dhead"><h2 data-lang="en">Setup timeline</h2><h2 data-lang="fr">Calendrier</h2></div>
+      <div class="card"><div class="tl">
+        <div class="tli"><div class="tll"><div class="tld done"></div><div class="tll-line"></div></div><div class="tlc"><div class="tl-day" data-lang="en">Day 0 — Complete</div><div class="tl-day" data-lang="fr">Jour 0 — Terminé</div><div class="tlt" data-lang="en">Registered on Nod platform</div><div class="tlt" data-lang="fr">Enregistré sur la plateforme Nod</div><div class="tld2" data-lang="en">Your information saved. Kit delivery arranged within 48h.</div><div class="tld2" data-lang="fr">Vos informations sauvegardées. Livraison du kit sous 48h.</div></div></div>
+        <div class="tli"><div class="tll"><div class="tld now"></div><div class="tll-line"></div></div><div class="tlc"><div class="tl-day" data-lang="en">Days 1–13 — In progress</div><div class="tl-day" data-lang="fr">Jours 1–13 — En cours</div><div class="tlt" data-lang="en">Speed &amp; uptime monitoring</div><div class="tlt" data-lang="fr">Surveillance vitesse &amp; disponibilité</div><div class="tld2" data-lang="en">We measure 24/7. Must hit 95%+ uptime. Alerts sent if anything needs attention.</div><div class="tld2" data-lang="fr">Mesure 24h/24. Doit atteindre 95%+ de disponibilité. Alertes envoyées si nécessaire.</div></div></div>
+        <div class="tli"><div class="tll"><div class="tld soon"></div><div class="tll-line"></div></div><div class="tlc"><div class="tl-day" data-lang="en">Day 14 — Revenue starts</div><div class="tl-day" data-lang="fr">Jour 14 — Les revenus commencent</div><div class="tlt" data-lang="en">Node goes live. First subscribers connect.</div><div class="tlt" data-lang="fr">Nœud en ligne. Premiers abonnés connectés.</div><div class="tld2" data-lang="en">First MoMo payout on the 1st of next month. You keep 70%.</div><div class="tld2" data-lang="fr">Premier paiement MoMo le 1er du mois suivant. Vous gardez 70%.</div></div></div>
+      </div></div>
     </div>
-
-    <!-- SUBS TABLE -->
-    <div id="ot-subs" style="display:none">
-      <div class="dhead"><h2 data-lang="en">Your subscribers</h2><h2 data-lang="fr">Vos abonnés</h2></div>
-      <div class="card" style="padding:0;overflow:hidden">
-        <table class="tbl">
-          <thead><tr><th data-lang="en">Name</th><th data-lang="fr">Nom</th><th>Plan</th><th data-lang="en">Mode</th><th data-lang="fr">Mode</th><th data-lang="en">Status</th><th data-lang="fr">Statut</th><th data-lang="en">Revenue</th><th data-lang="fr">Revenu</th></tr></thead>
-          <tbody>
-            <tr><td>Bertrand K.</td><td><span class="p p-plus">Plus</span></td><td>WiFi</td><td><span class="dot" data-lang="en">Active</span><span class="dot" data-lang="fr">Actif</span></td><td style="color:var(--accent)">3,500 CFA</td></tr>
-            <tr><td>Carine M.</td><td><span class="p p-plus">Plus</span></td><td>VPN</td><td><span class="dot" data-lang="en">Active</span><span class="dot" data-lang="fr">Actif</span></td><td style="color:var(--accent)">3,500 CFA</td></tr>
-            <tr><td>Jonas T.</td><td><span class="p p-elite">Elite</span></td><td>WiFi</td><td><span class="dot" data-lang="en">Active</span><span class="dot" data-lang="fr">Actif</span></td><td style="color:var(--accent)">6,300 CFA</td></tr>
-            <tr><td>Diane F.</td><td><span class="p p-trial">Trial</span></td><td>WiFi</td><td><span class="dot off" data-lang="en">9 days</span><span class="dot off" data-lang="fr">9 jours</span></td><td style="color:var(--g700)" data-lang="en">trial</td><td style="color:var(--g700)" data-lang="fr">essai</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- EARNINGS -->
+    <div id="ot-subs" style="display:none"><div class="dhead"><h2 data-lang="en">Subscribers</h2><h2 data-lang="fr">Abonnés</h2><p data-lang="en">None yet — node goes live on day 14</p><p data-lang="fr">Aucun encore — nœud en ligne au jour 14</p></div></div>
     <div id="ot-earn" style="display:none">
-      <div class="dhead"><h2 data-lang="en">Earnings history</h2><h2 data-lang="fr">Historique des gains</h2></div>
-      <div class="card">
-        <div class="er"><div class="el">January 2025</div><div class="ev g">26,250 CFA</div></div>
-        <div class="er"><div class="el">December 2024</div><div class="ev g">19,600 CFA</div></div>
-        <div class="er"><div class="el">November 2024</div><div class="ev g">12,250 CFA</div></div>
-        <div class="er"><div class="el">October 2024</div><div class="ev">5,250 CFA</div></div>
-      </div>
-      <div class="card"><div class="ctitle" data-lang="en">Payout method</div><div class="ctitle" data-lang="fr">Méthode de paiement</div>
-        <div class="ptabs">
-          <button class="ptab on">MTN MoMo</button>
-          <button class="ptab" data-lang="en">Orange Money</button><button class="ptab" data-lang="fr">Orange Money</button>
-          <button class="ptab">USDT</button>
-        </div>
-        <p style="font-size:12px;color:var(--g500);line-height:1.7" data-lang="en">Overseas node owners receive payouts in USDT to any crypto wallet. Converted at mid-market rate on payout day.</p>
-        <p style="font-size:12px;color:var(--g500);line-height:1.7" data-lang="fr">Les propriétaires de nœuds à l'étranger reçoivent des paiements en USDT sur n'importe quel portefeuille crypto.</p>
+      <div class="dhead"><h2 data-lang="en">Earnings</h2><h2 data-lang="fr">Gains</h2></div>
+      <div class="card"><div class="er"><div class="el" data-lang="en">This month</div><div class="el" data-lang="fr">Ce mois</div><div class="ev">0 CFA</div></div><div class="er"><div class="el" data-lang="en">Payout method</div><div class="el" data-lang="fr">Méthode paiement</div><div class="ev" id="own-payout-display">MoMo</div></div></div>
+      <div class="card"><div class="ctitle" data-lang="en">At full capacity you earn</div><div class="ctitle" data-lang="fr">À capacité maximale vous gagnez</div>
+        <div class="er"><div class="el" data-lang="en">8 Plus subscribers</div><div class="ev g">28,000 CFA/mo</div></div>
+        <div class="er"><div class="el" data-lang="en">Your Starlink cost</div><div class="ev r">−35,000 CFA</div></div>
+        <div class="er"><div class="el" style="color:var(--accent)" data-lang="en">Net profit</div><div class="ev g">+24,500 CFA/mo</div></div>
       </div>
     </div>
-
-    <!-- HEALTH -->
-    <div id="ot-hlth" style="display:none">
-      <div class="dhead"><h2 data-lang="en">Node health</h2><h2 data-lang="fr">Santé du nœud</h2></div>
-      <div class="sg">
-        <div class="sc"><div class="sl" data-lang="en">Uptime</div><div class="sl" data-lang="fr">Disponibilité</div><div class="sv ac">99.2%</div></div>
-        <div class="sc"><div class="sl" data-lang="en">Avg speed</div><div class="sl" data-lang="fr">Vitesse moy.</div><div class="sv">18.4</div><div class="ss">Mbps</div></div>
-        <div class="sc"><div class="sl" data-lang="en">Data served</div><div class="sl" data-lang="fr">Données servies</div><div class="sv">284</div><div class="ss">GB</div></div>
-      </div>
-      <div class="card"><div class="ctitle" data-lang="en">Alerts</div><div class="ctitle" data-lang="fr">Alertes</div>
-        <div class="notif"><div class="nic g">✓</div><div><div class="ntxt"><strong data-lang="en">Firmware updated</strong><strong data-lang="fr">Firmware mis à jour</strong> — v2.1.4</div><div class="ntime">2 days ago</div></div></div>
-        <div class="notif"><div class="nic g">✓</div><div><div class="ntxt"><strong data-lang="en">Payout sent</strong><strong data-lang="fr">Paiement envoyé</strong> — 19,600 CFA → MoMo</div><div class="ntime">1 Jan 2025</div></div></div>
-        <div class="notif"><div class="nic w">⚠</div><div><div class="ntxt" data-lang="en">Brief 4-min outage — Starlink handoff. Auto-recovered.</div><div class="ntxt" data-lang="fr">Panne brève 4 min — passage Starlink. Récupération automatique.</div><div class="ntime">28 Dec 2024</div></div></div>
-      </div>
+    <div id="ot-hlth" style="display:none"><div class="dhead"><h2 data-lang="en">Node health</h2><h2 data-lang="fr">Santé du nœud</h2></div>
+      <div class="card"><div class="notif"><div class="nic g">✓</div><div><div class="ntxt" data-lang="en"><strong>Node registered</strong> — quality check in progress. No action needed.</div><div class="ntxt" data-lang="fr"><strong>Nœud enregistré</strong> — vérification qualité en cours. Aucune action requise.</div><div class="ntime">Now</div></div></div></div>
     </div>
   </main>
-
   <nav class="mobnav"><div class="mnw">
     <button class="mni on" onclick="OT('ov')"><span class="mnic">◎</span><span data-lang="en">Overview</span><span data-lang="fr">Aperçu</span></button>
-    <button class="mni" onclick="OT('tl')"><span class="mnic">⏱</span><span data-lang="en">Setup</span><span data-lang="fr">Config</span></button>
-    <button class="mni" onclick="OT('subs')"><span class="mnic">👥</span><span data-lang="en">Subs</span><span data-lang="fr">Abonnés</span></button>
+    <button class="mni" onclick="OT('tl')"><span class="mnic">⏱</span>Setup</button>
+    <button class="mni" onclick="OT('subs')"><span class="mnic">👥</span>Subs</button>
     <button class="mni" onclick="OT('earn')"><span class="mnic">◈</span><span data-lang="en">Earn</span><span data-lang="fr">Gains</span></button>
-    <button class="mni" onclick="OT('hlth')"><span class="mnic">◉</span><span data-lang="en">Health</span><span data-lang="fr">Santé</span></button>
+    <button class="mni" onclick="OT('hlth')"><span class="mnic">◉</span>Health</button>
   </div></nav>
 </div>
 </div>
 
-<!-- ══════ MODALS ══════ -->
-
-<!-- OTP / SUBSCRIBER SIGNUP -->
-<div class="ov" id="m-otp" onclick="cm(event,'m-otp')">
+<!-- MODALS -->
+<!-- SUBSCRIBER OTP -->
+<div class="ov" id="m-otp" onclick="closeOv(event,'m-otp')">
 <div class="modal">
-  <button class="modal-x" onclick="cm2('m-otp')">×</button>
-  <!-- Step 1 -->
+  <button class="modal-x" onclick="cm('m-otp')">×</button>
   <div id="otp1">
     <div class="steps-bar"><div class="step-pip on"></div><div class="step-pip"></div><div class="step-pip"></div></div>
-    <div class="m-title" data-lang="en">Enter your number</div>
-    <div class="m-title" data-lang="fr">Entrez votre numéro</div>
-    <div class="m-sub" data-lang="en">No email. No password. No ID. Exactly like WhatsApp.</div>
-    <div class="m-sub" data-lang="fr">Pas d'email. Pas de mot de passe. Pas de pièce d'identité. Exactement comme WhatsApp.</div>
+    <div class="m-title" data-lang="en">Enter your number</div><div class="m-title" data-lang="fr">Entrez votre numéro</div>
+    <div class="m-sub" data-lang="en">No email. No password. No ID. Just like WhatsApp.</div><div class="m-sub" data-lang="fr">Pas d'email. Pas de mot de passe. Pas de pièce d'identité.</div>
     <div class="pill-note">⚡ <span data-lang="en">14 days free starts the moment you verify</span><span data-lang="fr">14 jours gratuits commencent dès la vérification</span></div>
-    <div class="fg"><label class="fl" data-lang="en">Phone number (MTN or Orange)</label><label class="fl" data-lang="fr">Numéro de téléphone (MTN ou Orange)</label><input class="fi" type="tel" placeholder="+237 6XX XXX XXX" id="otp-ph"></div>
-    <button class="btn btn-accent btn-full" style="padding:13px" onclick="otp2()" data-lang="en">Send code →</button>
-    <button class="btn btn-accent btn-full" style="padding:13px" onclick="otp2()" data-lang="fr">Envoyer le code →</button>
-    <div class="form-foot" data-lang="en">Already on Nod? <a onclick="cm2('m-otp');om('m-in')">Sign in</a></div>
-    <div class="form-foot" data-lang="fr">Déjà sur Nod? <a onclick="cm2('m-otp');om('m-in')">Connexion</a></div>
+    <div class="fg"><label class="fl" data-lang="en">Phone number (MTN or Orange)</label><label class="fl" data-lang="fr">Numéro (MTN ou Orange)</label><input class="fi" type="tel" placeholder="+237 6XX XXX XXX" id="otp-ph"></div>
+    <button class="btn btn-accent btn-full" style="padding:13px" onclick="sendOTP()" id="otp1-btn" data-lang="en">Send code →</button>
+    <button class="btn btn-accent btn-full" style="padding:13px" onclick="sendOTP()" id="otp1-btn-fr" data-lang="fr">Envoyer le code →</button>
+    <div class="form-foot" data-lang="en">Already on Nod? <a onclick="cm('m-otp');om('m-in')">Sign in</a></div>
+    <div class="form-foot" data-lang="fr">Déjà sur Nod? <a onclick="cm('m-otp');om('m-in')">Connexion</a></div>
   </div>
-  <!-- Step 2 -->
   <div id="otp2" style="display:none">
     <div class="steps-bar"><div class="step-pip done"></div><div class="step-pip on"></div><div class="step-pip"></div></div>
-    <div class="m-title" data-lang="en">Enter the code</div>
-    <div class="m-title" data-lang="fr">Entrez le code</div>
-    <div class="m-sub" id="otp-sent" data-lang="en">Sent to your number via SMS</div>
-    <div class="m-sub" id="otp-sent-fr" data-lang="fr">Envoyé à votre numéro par SMS</div>
+    <div class="m-title" data-lang="en">Enter the code</div><div class="m-title" data-lang="fr">Entrez le code</div>
+    <div class="m-sub" id="otp-sent-msg">Code sent via SMS</div>
     <div class="otp-row"><input class="otp-d" maxlength="1" type="tel"><input class="otp-d" maxlength="1" type="tel"><input class="otp-d" maxlength="1" type="tel"><input class="otp-d" maxlength="1" type="tel"></div>
     <div style="font-size:11px;color:var(--g700);text-align:center;margin-bottom:16px" data-lang="en">Resend in 30s</div>
-    <div style="font-size:11px;color:var(--g700);text-align:center;margin-bottom:16px" data-lang="fr">Renvoyer dans 30s</div>
-    <button class="btn btn-accent btn-full" style="padding:13px" onclick="otp3()" data-lang="en">Verify →</button>
-    <button class="btn btn-accent btn-full" style="padding:13px" onclick="otp3()" data-lang="fr">Vérifier →</button>
+    <button class="btn btn-accent btn-full" style="padding:13px" onclick="verifyOTP()" id="otp2-btn" data-lang="en">Verify →</button>
+    <button class="btn btn-accent btn-full" style="padding:13px" onclick="verifyOTP()" id="otp2-btn-fr" data-lang="fr">Vérifier →</button>
   </div>
-  <!-- Step 3 -->
   <div id="otp3" style="display:none">
     <div class="steps-bar"><div class="step-pip done"></div><div class="step-pip done"></div><div class="step-pip on"></div></div>
-    <div class="m-title" data-lang="en">Pick your plan</div>
-    <div class="m-title" data-lang="fr">Choisissez votre forfait</div>
-    <div class="m-sub" data-lang="en">All plans include 14 days free. No payment before day 14.</div>
-    <div class="m-sub" data-lang="fr">Tous les forfaits incluent 14 jours gratuits. Aucun paiement avant le jour 14.</div>
-    <div class="fg">
-      <select class="fsel">
-        <option data-lang="en">Basic — 2,500 CFA/mo · 2 devices · 5 Mbps</option>
-        <option data-lang="fr">Basic — 2 500 CFA/mois · 2 appareils · 5 Mbps</option>
-        <option selected data-lang="en">Plus — 5,000 CFA/mo · 3 devices · 15 Mbps (recommended)</option>
-        <option selected data-lang="fr">Plus — 5 000 CFA/mois · 3 appareils · 15 Mbps (recommandé)</option>
-        <option data-lang="en">Elite — 9,000 CFA/mo · 5 devices · 30 Mbps</option>
-        <option data-lang="fr">Elite — 9 000 CFA/mois · 5 appareils · 30 Mbps</option>
-      </select>
-    </div>
-    <div class="fg">
-      <label class="fl" data-lang="en">Payment after trial (via)</label>
-      <label class="fl" data-lang="fr">Paiement après essai (via)</label>
-      <div class="ptabs">
-        <button class="ptab on">MTN MoMo</button>
-        <button class="ptab" data-lang="en">Orange Money</button><button class="ptab" data-lang="fr">Orange Money</button>
-        <button class="ptab">USDT</button>
+    <div class="m-title" data-lang="en">Pick your plan</div><div class="m-title" data-lang="fr">Choisissez votre forfait</div>
+    <div class="m-sub" data-lang="en">All plans: 14 days free. No payment before day 14.</div><div class="m-sub" data-lang="fr">Tous les forfaits: 14 jours gratuits. Aucun paiement avant le jour 14.</div>
+    <div class="fg"><select class="fsel" id="otp-plan">
+      <option value="basic" data-lang="en">Basic — 2,500 CFA/mo · 2 devices · 5 Mbps</option>
+      <option value="plus" selected data-lang="en">Plus — 5,000 CFA/mo · 3 devices · 15 Mbps (recommended)</option>
+      <option value="elite" data-lang="en">Elite — 9,000 CFA/mo · 5 devices · 30 Mbps</option>
+    </select></div>
+    <div class="fg"><label class="fl" data-lang="en">Payment after trial</label><label class="fl" data-lang="fr">Paiement après essai</label>
+      <div class="ptabs" id="otp-pay-tabs">
+        <button class="ptab on" onclick="selectPayTab(this)">MTN MoMo</button>
+        <button class="ptab" onclick="selectPayTab(this)">Orange Money</button>
+        <button class="ptab" onclick="selectPayTab(this)">USDT</button>
       </div>
     </div>
-    <button class="btn btn-accent btn-full" style="padding:13px" onclick="otpDone()" data-lang="en">Start my free internet →</button>
-    <button class="btn btn-accent btn-full" style="padding:13px" onclick="otpDone()" data-lang="fr">Démarrer mon internet gratuit →</button>
+    <button class="btn btn-accent btn-full" style="padding:13px" onclick="completeSignup()" id="otp3-btn" data-lang="en">Start my free internet →</button>
+    <button class="btn btn-accent btn-full" style="padding:13px" onclick="completeSignup()" id="otp3-btn-fr" data-lang="fr">Démarrer mon internet gratuit →</button>
   </div>
 </div>
 </div>
 
 <!-- SIGN IN -->
-<div class="ov" id="m-in" onclick="cm(event,'m-in')">
+<div class="ov" id="m-in" onclick="closeOv(event,'m-in')">
 <div class="modal">
-  <button class="modal-x" onclick="cm2('m-in')">×</button>
-  <div class="m-title" data-lang="en">Welcome back</div>
-  <div class="m-title" data-lang="fr">Bon retour</div>
-  <div class="m-sub" data-lang="en">Enter your number to receive a sign-in code</div>
-  <div class="m-sub" data-lang="fr">Entrez votre numéro pour recevoir un code de connexion</div>
-  <div class="fg"><label class="fl" data-lang="en">Phone number</label><label class="fl" data-lang="fr">Numéro de téléphone</label><input class="fi" type="tel" placeholder="+237 6XX XXX XXX"></div>
-  <button class="btn btn-white btn-full" style="padding:13px;margin-bottom:8px" onclick="go('s-sub');cm2('m-in')" data-lang="en">Continue as subscriber →</button>
-  <button class="btn btn-white btn-full" style="padding:13px;margin-bottom:8px" onclick="go('s-sub');cm2('m-in')" data-lang="fr">Continuer comme abonné →</button>
-  <button class="btn btn-outline btn-full" style="padding:13px" onclick="go('s-own');cm2('m-in')" data-lang="en">Continue as node owner →</button>
-  <button class="btn btn-outline btn-full" style="padding:13px" onclick="go('s-own');cm2('m-in')" data-lang="fr">Continuer comme propriétaire →</button>
-  <div class="form-foot" data-lang="en">New to Nod? <a onclick="cm2('m-in');om('m-otp')">Get 14 days free</a></div>
-  <div class="form-foot" data-lang="fr">Nouveau sur Nod? <a onclick="cm2('m-in');om('m-otp')">Obtenir 14 jours gratuits</a></div>
+  <button class="modal-x" onclick="cm('m-in')">×</button>
+  <div class="m-title" data-lang="en">Welcome back</div><div class="m-title" data-lang="fr">Bon retour</div>
+  <div class="m-sub" data-lang="en">Enter your number to receive a sign-in code</div><div class="m-sub" data-lang="fr">Entrez votre numéro pour recevoir un code</div>
+  <div class="fg"><label class="fl" data-lang="en">Phone number</label><label class="fl" data-lang="fr">Numéro de téléphone</label><input class="fi" type="tel" placeholder="+237 6XX XXX XXX" id="signin-phone"></div>
+  <button class="btn btn-white btn-full" style="padding:13px;margin-bottom:8px" onclick="signIn('sub')" data-lang="en">Continue as subscriber →</button>
+  <button class="btn btn-white btn-full" style="padding:13px;margin-bottom:8px" onclick="signIn('sub')" data-lang="fr">Continuer comme abonné →</button>
+  <button class="btn btn-outline btn-full" style="padding:13px" onclick="signIn('own')" data-lang="en">Continue as node owner →</button>
+  <button class="btn btn-outline btn-full" style="padding:13px" onclick="signIn('own')" data-lang="fr">Continuer comme propriétaire →</button>
+  <div class="form-foot" data-lang="en">New to Nod? <a onclick="cm('m-in');om('m-otp')">Get 14 days free</a></div>
+  <div class="form-foot" data-lang="fr">Nouveau sur Nod? <a onclick="cm('m-in');om('m-otp')">Obtenir 14 jours gratuits</a></div>
 </div>
 </div>
 
-<!-- OWNER SIGNUP -->
-<div class="ov" id="m-owner" onclick="cm(event,'m-owner')">
+<!-- NODE OWNER SIGNUP -->
+<div class="ov" id="m-owner" onclick="closeOv(event,'m-owner')">
 <div class="modal">
-  <button class="modal-x" onclick="cm2('m-owner')">×</button>
-  <div class="m-title" data-lang="en">Register your node</div>
-  <div class="m-title" data-lang="fr">Enregistrez votre nœud</div>
-  <div class="m-sub" data-lang="en">Turn your connection into monthly income. Setup takes 2 weeks then revenue starts.</div>
-  <div class="m-sub" data-lang="fr">Transformez votre connexion en revenus mensuels. La configuration prend 2 semaines puis les revenus commencent.</div>
+  <button class="modal-x" onclick="cm('m-owner')">×</button>
+  <div class="m-title" data-lang="en">Register your node</div><div class="m-title" data-lang="fr">Enregistrez votre nœud</div>
+  <div class="m-sub" data-lang="en">Turn your connection into monthly income. 2-week setup, then revenue starts.</div><div class="m-sub" data-lang="fr">Transformez votre connexion en revenus. 2 semaines de configuration, puis les revenus commencent.</div>
   <div class="pill-note">◎ <span data-lang="en">You keep 70%. Paid to MoMo on the 1st of every month.</span><span data-lang="fr">Vous gardez 70%. Payé sur MoMo le 1er de chaque mois.</span></div>
-  <div class="fg"><label class="fl" data-lang="en">Your name</label><label class="fl" data-lang="fr">Votre nom</label><input class="fi" type="text" placeholder="Marie Ngo"></div>
-  <div class="fg"><label class="fl" data-lang="en">Phone (MoMo payouts)</label><label class="fl" data-lang="fr">Téléphone (paiements MoMo)</label><input class="fi" type="tel" placeholder="+237 6XX XXX XXX"></div>
-  <div class="fg">
-    <label class="fl" data-lang="en">Connection type</label>
-    <label class="fl" data-lang="fr">Type de connexion</label>
-    <select class="fsel">
-      <option>Starlink satellite</option>
-      <option data-lang="en">Camtel fiber</option><option data-lang="fr">Fibre Camtel</option>
-      <option>Creolink fiber</option>
-      <option data-lang="en">Orange fiber</option><option data-lang="fr">Fibre Orange</option>
-      <option data-lang="en">Other fiber / hybrid</option><option data-lang="fr">Autre fibre / hybride</option>
+  <div class="fg"><label class="fl" data-lang="en">Your name</label><label class="fl" data-lang="fr">Votre nom</label><input class="fi" type="text" placeholder="Marie Ngo" id="own-name-input"></div>
+  <div class="fg"><label class="fl" data-lang="en">Phone (MoMo payouts)</label><label class="fl" data-lang="fr">Téléphone (paiements MoMo)</label><input class="fi" type="tel" placeholder="+237 6XX XXX XXX" id="own-phone"></div>
+  <div class="fg"><label class="fl" data-lang="en">Connection type</label><label class="fl" data-lang="fr">Type de connexion</label>
+    <select class="fsel" id="own-conn">
+      <option value="starlink">Starlink satellite</option>
+      <option value="camtel" data-lang="en">Camtel fiber</option><option value="camtel" data-lang="fr">Fibre Camtel</option>
+      <option value="creolink">Creolink fiber</option>
+      <option value="orange" data-lang="en">Orange fiber</option><option value="orange" data-lang="fr">Fibre Orange</option>
+      <option value="other" data-lang="en">Other / hybrid</option><option value="other" data-lang="fr">Autre / hybride</option>
     </select>
   </div>
-  <div class="fg"><label class="fl" data-lang="en">Location (city, neighbourhood)</label><label class="fl" data-lang="fr">Localisation (ville, quartier)</label><input class="fi" type="text" placeholder="Bastos, Yaoundé / Paris / Lagos"></div>
-  <div class="fg">
-    <label class="fl" data-lang="en">Payout preference</label>
-    <label class="fl" data-lang="fr">Préférence de paiement</label>
-    <div class="ptabs">
-      <button class="ptab on">MTN MoMo</button>
-      <button class="ptab" data-lang="en">Orange Money</button><button class="ptab" data-lang="fr">Orange Money</button>
-      <button class="ptab">USDT</button>
+  <div class="fg"><label class="fl" data-lang="en">Location</label><label class="fl" data-lang="fr">Localisation</label><input class="fi" type="text" placeholder="Bastos, Yaoundé / Paris / Lagos" id="own-location"></div>
+  <div class="fg"><label class="fl" data-lang="en">Payout preference</label><label class="fl" data-lang="fr">Préférence de paiement</label>
+    <div class="ptabs" id="own-pay-tabs">
+      <button class="ptab on" onclick="selectPayTab(this)">MTN MoMo</button>
+      <button class="ptab" onclick="selectPayTab(this)">Orange Money</button>
+      <button class="ptab" onclick="selectPayTab(this)">USDT</button>
     </div>
   </div>
-  <button class="btn btn-white btn-full" style="padding:13px" onclick="go('s-own');cm2('m-owner')" data-lang="en">Register my node →</button>
-  <button class="btn btn-white btn-full" style="padding:13px" onclick="go('s-own');cm2('m-owner')" data-lang="fr">Enregistrer mon nœud →</button>
+  <button class="btn btn-white btn-full" style="padding:13px" onclick="registerOwner()" id="own-register-btn" data-lang="en">Register my node →</button>
+  <button class="btn btn-white btn-full" style="padding:13px" onclick="registerOwner()" id="own-register-btn-fr" data-lang="fr">Enregistrer mon nœud →</button>
   <div class="form-foot" data-lang="en">We contact you within 24h to arrange kit delivery. Overseas owners receive config by email.</div>
-  <div class="form-foot" data-lang="fr">Nous vous contactons sous 24h pour la livraison du kit. Les propriétaires à l'étranger reçoivent la configuration par email.</div>
+  <div class="form-foot" data-lang="fr">Nous vous contactons sous 24h pour la livraison du kit.</div>
 </div>
 </div>
 
+<!-- SUPABASE SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
+// ── SUPABASE ──
+const SUPA_URL = 'https://ugyyqmwzwrifmrwxzyhj.supabase.co';
+const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVneXlxbXd6d3JpZm1yd3h6eWhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ2MjA0NjYsImV4cCI6MjA5MDE5NjQ2Nn0.y6ResrrcMf8I3kSDkck7JCRKGdPxgbDc4KvGuDT0BcA';
+const db = supabase.createClient(SUPA_URL, SUPA_KEY);
+
 // ── LANGUAGE ──
 let lang = 'en';
+let currentPhone = '';
+let selectedPlan = 'plus';
+let selectedPayment = 'MTN MoMo';
+let ownerPayment = 'MTN MoMo';
+
 function detectLang(){
-  const bl = navigator.language || navigator.userLanguage || 'en';
-  if(bl.startsWith('fr')){lang='fr';applyLang()}
+  const bl = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+  if(bl.startsWith('fr')){ lang = 'fr'; applyLang(); }
 }
 function applyLang(){
-  document.querySelectorAll('[data-lang="en"]').forEach(el=>el.style.display=lang==='en'?'':'none');
-  document.querySelectorAll('[data-lang="fr"]').forEach(el=>el.style.display=lang==='fr'?'':'none');
-  document.getElementById('lang-btn').textContent=lang==='en'?'FR':'EN';
+  document.querySelectorAll('[data-lang="en"]').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+  document.querySelectorAll('[data-lang="fr"]').forEach(el => el.style.display = lang === 'fr' ? '' : 'none');
+  document.getElementById('lang-btn').textContent = lang === 'en' ? 'FR' : 'EN';
 }
-function toggleLang(){lang=lang==='en'?'fr':'en';applyLang()}
+function toggleLang(){ lang = lang === 'en' ? 'fr' : 'en'; applyLang(); }
 
 // ── SCREENS ──
 function go(id){
-  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   window.scrollTo(0,0);
-  if(id==='s-sub')bc('sub-bw',[18,14,10,8,12,20,34,40,38,32,30,28,35,40,38,42,44,38,30,24],'rgba(0,232,122,0.14)');
-  if(id==='s-own')bc('own-bw',[5,4,3,2,4,10,16,18,15,14,16,18,20,22,24,22,18,14,10,8],'rgba(77,166,255,0.14)');
-saveResult(id);
+  if(id === 's-sub') buildChart('sub-bw',[18,14,10,8,12,20,34,40,38,32,30,28,35,40,38,42,44,38,30,24],'rgba(0,232,122,0.14)');
+  if(id === 's-own') buildChart('own-bw',[5,4,3,2,4,10,16,18,15,14,16,18,20,22,24,22,18,14,10,8],'rgba(77,166,255,0.14)');
+  track('go-' + id);
 }
 
 // ── MODALS ──
-function om(id){document.querySelectorAll('.ov').forEach(m=>m.classList.remove('open'));document.getElementById(id).classList.add('open')}
-function cm(e,id){if(e.target.id===id)document.getElementById(id).classList.remove('open')}
-function cm2(id){document.getElementById(id).classList.remove('open')}
+function om(id){ document.querySelectorAll('.ov').forEach(m => m.classList.remove('open')); document.getElementById(id).classList.add('open'); }
+function cm(id){ document.getElementById(id).classList.remove('open'); }
+function closeOv(e, id){ if(e.target.id === id) cm(id); }
 
-// ── OTP ──
-function otp2(){
-  const ph=document.getElementById('otp-ph').value||'+237 6XX XXX XXX';
-  document.getElementById('otp1').style.display='none';
-  document.getElementById('otp2').style.display='block';
-  const ds=document.querySelectorAll('.otp-d');
-  ds.forEach((d,i)=>{d.value='';d.addEventListener('input',()=>{if(d.value&&i<ds.length-1)ds[i+1].focus()})});
-  ds[0].focus();
-  toast(lang==='fr'?'Code envoyé par SMS ✓':'Code sent via SMS ✓');
+// ── PAY TABS ──
+function selectPayTab(btn){
+  btn.closest('.ptabs').querySelectorAll('.ptab').forEach(t => t.classList.remove('on'));
+  btn.classList.add('on');
 }
-function otp3(){document.getElementById('otp2').style.display='none';document.getElementById('otp3').style.display='block';toast(lang==='fr'?'Numéro vérifié ✓':'Number verified ✓')}
-function otpDone(){cm2('m-otp');go('s-sub');toast(lang==='fr'?'Bienvenue sur Nod! 14 jours gratuits commencent ⚡':'Welcome to Nod! 14 days free started ⚡')}
+document.addEventListener('click', e => {
+  const pt = e.target.closest('.ptab');
+  if(pt){ pt.closest('.ptabs').querySelectorAll('.ptab').forEach(t => t.classList.remove('on')); pt.classList.add('on'); }
+});
 
-// ── SUB TABS ──
-const ST_TABS=['ov','spd','vpn','dev','vcard','ref'];
+// ── SUPABASE: SAVE SIGNUP ──
+async function saveSignup(phone, plan, payment, ref){
+  try {
+    const { error } = await db.from('signups').insert([{
+      phone: phone,
+      plan: plan,
+      payment_method: payment,
+      referral: ref || null,
+      trial_start: new Date().toISOString(),
+      trial_end: new Date(Date.now() + 14*24*60*60*1000).toISOString(),
+      lang: lang,
+      status: 'trial'
+    }]);
+    if(error) console.error('Signup save error:', error);
+    else console.log('Signup saved:', phone);
+  } catch(e){ console.error('Signup error:', e); }
+}
+
+// ── SUPABASE: SAVE OWNER ──
+async function saveOwner(name, phone, conn, location, payout){
+  try {
+    const { error } = await db.from('node_owners').insert([{
+      name: name,
+      phone: phone,
+      connection_type: conn,
+      location: location,
+      payout_method: payout,
+      status: 'setup',
+      registered_at: new Date().toISOString(),
+      lang: lang
+    }]);
+    if(error) console.error('Owner save error:', error);
+    else console.log('Owner saved:', name);
+  } catch(e){ console.error('Owner error:', e); }
+}
+
+// ── SUPABASE: ANALYTICS ──
+async function track(event){
+  try {
+    await db.from('Results').insert([{ value: event }]);
+  } catch(e){}
+}
+
+// ── OTP FLOW ──
+async function sendOTP(){
+  const ph = document.getElementById('otp-ph').value.trim();
+  if(!ph || ph.length < 8){ toast(lang==='fr'?'Entrez votre numéro':'Enter your phone number'); return; }
+  currentPhone = ph;
+  const btn = document.getElementById(lang==='fr'?'otp1-btn-fr':'otp1-btn');
+  btn.innerHTML = '<span class="spinner"></span>' + (lang==='fr'?'Envoi...':'Sending...');
+  btn.disabled = true;
+  await track('otp-sent');
+  setTimeout(()=>{
+    document.getElementById('otp1').style.display = 'none';
+    document.getElementById('otp2').style.display = 'block';
+    document.getElementById('otp-sent-msg').textContent = (lang==='fr'?'Code envoyé à ':'Code sent to ') + ph;
+    const digits = document.querySelectorAll('.otp-d');
+    digits.forEach((d,i) => { d.value=''; d.addEventListener('input', () => { if(d.value && i < digits.length-1) digits[i+1].focus(); }); });
+    digits[0].focus();
+    toast(lang==='fr'?'Code envoyé par SMS ✓':'Code sent via SMS ✓');
+  }, 800);
+}
+
+async function verifyOTP(){
+  const digits = document.querySelectorAll('.otp-d');
+  const code = Array.from(digits).map(d => d.value).join('');
+  if(code.length < 4){ toast(lang==='fr'?'Entrez le code à 4 chiffres':'Enter the 4-digit code'); return; }
+  const btn = document.getElementById(lang==='fr'?'otp2-btn-fr':'otp2-btn');
+  btn.innerHTML = '<span class="spinner"></span>' + (lang==='fr'?'Vérification...':'Verifying...');
+  btn.disabled = true;
+  await track('otp-verified');
+  setTimeout(()=>{
+    document.getElementById('otp2').style.display = 'none';
+    document.getElementById('otp3').style.display = 'block';
+    toast(lang==='fr'?'Numéro vérifié ✓':'Number verified ✓');
+    btn.innerHTML = (lang==='fr'?'Vérifier →':'Verify →');
+    btn.disabled = false;
+  }, 600);
+}
+
+async function completeSignup(){
+  const planSel = document.getElementById('otp-plan');
+  const plan = planSel.value || 'plus';
+  const payBtn = document.querySelector('#otp-pay-tabs .ptab.on');
+  const payment = payBtn ? payBtn.textContent : 'MTN MoMo';
+  const ref = new URLSearchParams(window.location.search).get('ref') || '';
+  const btn = document.getElementById(lang==='fr'?'otp3-btn-fr':'otp3-btn');
+  btn.innerHTML = '<span class="spinner"></span>' + (lang==='fr'?'Démarrage...':'Starting...');
+  btn.disabled = true;
+  await saveSignup(currentPhone, plan, payment, ref);
+  await track('signup-complete-' + plan);
+  setTimeout(()=>{
+    cm('m-otp');
+    const initials = currentPhone.slice(-4);
+    document.getElementById('sub-av').textContent = initials;
+    document.getElementById('sub-name').textContent = currentPhone;
+    document.getElementById('sub-tier').textContent = plan.charAt(0).toUpperCase()+plan.slice(1) + ' · 14 days free';
+    const refCode = currentPhone.replace(/\D/g,'').slice(-6);
+    document.getElementById('ref-link').textContent = 'getnod.com/join/' + refCode;
+    go('s-sub');
+    toast(lang==='fr'?'Bienvenue sur Nod! 14 jours gratuits commencent ⚡':'Welcome to Nod! 14 days free started ⚡');
+    btn.innerHTML = (lang==='fr'?'Démarrer →':'Start →');
+    btn.disabled = false;
+  }, 1000);
+}
+
+// ── OWNER REGISTRATION ──
+async function registerOwner(){
+  const name = document.getElementById('own-name-input').value.trim();
+  const phone = document.getElementById('own-phone').value.trim();
+  const conn = document.getElementById('own-conn').value;
+  const location = document.getElementById('own-location').value.trim();
+  const payBtn = document.querySelector('#own-pay-tabs .ptab.on');
+  const payout = payBtn ? payBtn.textContent : 'MTN MoMo';
+  if(!name){ toast(lang==='fr'?'Entrez votre nom':'Enter your name'); return; }
+  if(!phone || phone.length < 8){ toast(lang==='fr'?'Entrez votre téléphone':'Enter your phone number'); return; }
+  if(!location){ toast(lang==='fr'?'Entrez votre localisation':'Enter your location'); return; }
+  const btn = document.getElementById(lang==='fr'?'own-register-btn-fr':'own-register-btn');
+  btn.innerHTML = '<span class="spinner"></span>' + (lang==='fr'?'Enregistrement...':'Registering...');
+  btn.disabled = true;
+  await saveOwner(name, phone, conn, location, payout);
+  await track('owner-registered-' + conn);
+  setTimeout(()=>{
+    cm('m-owner');
+    const initials = name.split(' ').map(n=>n[0]).join('').toUpperCase().slice(0,2);
+    document.getElementById('own-av').textContent = initials;
+    document.getElementById('own-name').textContent = name;
+    document.getElementById('own-payout-display').textContent = payout;
+    go('s-own');
+    toast(lang==='fr'?'Nœud enregistré! Vérification qualité démarrée ⏱':'Node registered! Quality check started ⏱');
+    btn.innerHTML = (lang==='fr'?'Enregistrer →':'Register →');
+    btn.disabled = false;
+  }, 1000);
+}
+
+// ── SIGN IN ──
+async function signIn(type){
+  const ph = document.getElementById('signin-phone').value.trim();
+  if(!ph){ toast(lang==='fr'?'Entrez votre numéro':'Enter your phone number'); return; }
+  await track('signin-' + type);
+  cm('m-in');
+  if(type === 'sub'){
+    document.getElementById('sub-av').textContent = ph.slice(-4);
+    document.getElementById('sub-name').textContent = ph;
+    go('s-sub');
+  } else {
+    document.getElementById('own-av').textContent = ph.slice(-4);
+    document.getElementById('own-name').textContent = ph;
+    go('s-own');
+  }
+  toast(lang==='fr'?'Bienvenue de retour!':'Welcome back!');
+}
+
+// ── TABS ──
+const ST_TABS = ['ov','spd','vpn','dev','vcard','ref'];
 function ST(t){
-  ST_TABS.forEach(x=>{const el=document.getElementById('st-'+x);if(el)el.style.display=x===t?'block':'none'});
-  document.querySelectorAll('#s-sub .ni, #s-sub .mni').forEach((el,i)=>el.classList.toggle('on',ST_TABS[i]===t));
-saveResult(t);
+  ST_TABS.forEach(x => { const el = document.getElementById('st-'+x); if(el) el.style.display = x===t?'block':'none'; });
+  document.querySelectorAll('#s-sub .ni, #s-sub .mni').forEach((el,i) => el.classList.toggle('on', ST_TABS[i]===t));
+  track('st-' + t);
 }
 
-// ── OWNER TABS ──
-const OT_TABS=['ov','tl','subs','earn','hlth'];
+const OT_TABS = ['ov','tl','subs','earn','hlth'];
 function OT(t){
-  OT_TABS.forEach(x=>{const el=document.getElementById('ot-'+x);if(el)el.style.display=x===t?'block':'none'});
-  document.querySelectorAll('#s-own .ni, #s-own .mni').forEach((el,i)=>el.classList.toggle('on',OT_TABS[i]===t));
-saveResult(t);
+  OT_TABS.forEach(x => { const el = document.getElementById('ot-'+x); if(el) el.style.display = x===t?'block':'none'; });
+  document.querySelectorAll('#s-own .ni, #s-own .mni').forEach((el,i) => el.classList.toggle('on', OT_TABS[i]===t));
+  track('ot-' + t);
 }
 
 // ── CHARTS ──
-function bc(id,data,color){
-  const el=document.getElementById(id);if(!el)return;
-  el.innerHTML='';const max=Math.max(...data);
-  data.forEach(v=>{const b=document.createElement('div');b.className='bwb';b.style.height=Math.round((v/max)*100)+'%';b.style.background=color;el.appendChild(b)});
+function buildChart(id, data, color){
+  const el = document.getElementById(id); if(!el) return;
+  el.innerHTML = ''; const max = Math.max(...data);
+  data.forEach(v => { const b = document.createElement('div'); b.className = 'bwb'; b.style.height = Math.round((v/max)*100)+'%'; b.style.background = color; el.appendChild(b); });
 }
 
 // ── SPEED TEST ──
 function runSpeedTest(){
-  const v=document.getElementById('spd-val');const s=document.getElementById('sc-val');
-  if(!v)return;v.textContent='...';let c=0;
-  const iv=setInterval(()=>{const r=(Math.random()*30+8).toFixed(1);v.textContent=r;if(s)s.textContent=r;c++;
-  if(c>14){clearInterval(iv);const f=(Math.random()*10+20).toFixed(1);v.textContent=f;if(s)s.textContent=f;toast(lang==='fr'?'Test terminé — partagez votre carte! ↗':'Done! Share your speed card ↗')}},130);
+  const v = document.getElementById('spd-val'); const s = document.getElementById('sc-val');
+  if(!v) return; v.textContent = '...'; let c = 0;
+  const iv = setInterval(() => { const r = (Math.random()*30+8).toFixed(1); v.textContent = r; if(s) s.textContent = r; c++;
+    if(c > 14){ clearInterval(iv); const f = (Math.random()*10+20).toFixed(1); v.textContent = f; if(s) s.textContent = f; toast(lang==='fr'?'Test terminé — partagez votre carte! ↗':'Done! Share your speed card ↗'); track('speedtest-complete'); }
+  }, 130);
 }
 
-// ── PAY TABS ──
-document.addEventListener('click',e=>{
-  const pt=e.target.closest('.ptab');
-  if(pt){pt.closest('.ptabs').querySelectorAll('.ptab').forEach(t=>t.classList.remove('on'));pt.classList.add('on')}
-});
-
 // ── TOAST ──
-function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3200)}
+function toast(msg){ const t = document.getElementById('toast'); t.textContent = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 3200); }
 
 // ── INIT ──
 detectLang();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script>
-const supabaseUrl = "https://ugyyqmwzwrifmrwxzyhj.supabase.co";
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVneXlxbXd6d3JpZm1yd3h6eWhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ2MjA0NjYsImV4cCI6MjA5MDE5NjQ2Nn0.y6ResrrcMf8I3kSDkck7JCRKGdPxgbDc4KvGuDT0BcA";
-const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
-async function saveResult(value){
-  console.log("TRY SAVE:", value);
-
-  const { data, error } = await supabaseClient
-    .from('Results')
-    .insert([{ value: value }]);
-
-  if(error){
-    console.error("Save error:", error);
-  } else {
-    console.log("Saved:", value);
-  }
-}
-
 </script>
 </body>
 </html>
